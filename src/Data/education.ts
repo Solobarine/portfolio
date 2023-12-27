@@ -24,7 +24,7 @@ const education = [
     dateEnded: 'March 2023',
     location: 'Choba, Nigeria',
     course: 'Petroleum and Gas Engineering',
-    degree: "Bachelor's",
+    degree: "Bachelor's Degree",
     highlights: [
       'Conducted tests on burner efficiency and thermal output, contributing to the optimization of energy processes.',
       'Specialized in Natural Gas Processing and Separation, applying this knowledge to real-world scenarios.',
