@@ -19,27 +19,28 @@ const Project = ({
   data: ProjectProps
   posStyle: string
 }) => {
-  let [imageIndex, setImageIndex] = useState(0)
+  const [imageIndex, setImageIndex] = useState(0)
   const next = () => {
-    setImageIndex(imageIndex++)
-    if (imageIndex === data.images.length) {
+
+    setImageIndex(imageIndex + 1)
+    if (imageIndex === data.images.length - 1) {
       setImageIndex(0)
     } else {
-      setImageIndex(imageIndex++)
+      setImageIndex(imageIndex + 1)
     }
   }
 
   const prev = () => {
-    setImageIndex(imageIndex--)
-    if (imageIndex === -1) {
+    setImageIndex(imageIndex - 1)
+    if (imageIndex === 0) {
       setImageIndex(data.images.length - 1)
     } else {
-      setImageIndex(imageIndex--)
+      setImageIndex(imageIndex - 1)
     }
   }
   return (
     <div
-      className={`project flex flex-wrap items-center w-fit gap-2 max-w-[70em] transition-all duration-500 ease-in bg-gray-100 shadow-gray-400 shadow-lg hover:shadow-emerald-300 mb-6 border border-gray-300 rounded-lg ${posStyle}`}
+      className={`project flex flex-wrap items-center w-fit gap-2 max-w-[50em] transition-all duration-500 ease-in bg-gray-100 shadow-gray-400 shadow-lg hover:shadow-emerald-300 mb-6 border border-gray-300 rounded-lg ${posStyle}`}
     >
       <div className='projectCaurosel'>
         <div className='relative aspect-video bg-stone-300 w-full'>
