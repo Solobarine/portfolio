@@ -1,5 +1,3 @@
-import React from 'react'
-
 const FastDelivery = ({ styles }: { styles: string }) => {
   return (
     <svg

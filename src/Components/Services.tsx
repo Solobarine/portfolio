@@ -1,4 +1,3 @@
-import React from 'react'
 import WebApplication from '../assets/icons/WebApplication'
 import Responsive from '../assets/icons/Responsive'
 import FastDelivery from '../assets/icons/FastDelivery'

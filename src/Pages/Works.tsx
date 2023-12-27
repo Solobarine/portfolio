@@ -1,4 +1,3 @@
-import React from 'react'
 import Project from '../Components/Project'
 import fullstack from '../Data/Projects/fullstack'
 import frontend from '../Data/Projects/frontend'

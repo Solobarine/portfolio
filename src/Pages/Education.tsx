@@ -1,4 +1,3 @@
-import React from 'react'
 import School from '../Components/School'
 import education from '../Data/education'
 

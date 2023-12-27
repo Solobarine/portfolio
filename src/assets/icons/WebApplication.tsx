@@ -1,5 +1,3 @@
-import React from 'react'
-
 const WebApplication = ({ styles }: { styles: string }) => {
   return (
     <svg

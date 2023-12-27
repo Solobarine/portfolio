@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)

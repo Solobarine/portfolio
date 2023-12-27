@@ -1,4 +1,3 @@
-import React from 'react'
 import Position from '../Components/Position'
 import experience from '../Data/experience'
 

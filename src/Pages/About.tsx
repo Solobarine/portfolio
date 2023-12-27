@@ -1,5 +1,3 @@
-import React from 'react'
-
 const About = () => {
   return (
     <div className='p-2 sm:py-12 bg-gray-100 mt-12' id='about'>

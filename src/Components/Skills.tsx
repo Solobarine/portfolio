@@ -1,4 +1,3 @@
-import React from 'react'
 import languages from '../Data/languages'
 import frontend from '../Data/frontend'
 import backend from '../Data/backend'

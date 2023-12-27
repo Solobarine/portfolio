@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Responsive = ({ styles }: { styles: string }) => {
   return (
     <svg

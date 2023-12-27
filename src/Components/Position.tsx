@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface ExperienceProps {
   id: number
   company: string
