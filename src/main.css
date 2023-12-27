@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@200;300;400;500;600&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,400;0,800;1,400;1,800&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-slate-600;
+}
+
+a.active {
+  @apply text-gray-900;
+}
+
+.app {
+  grid-template-rows: auto 1fr auto;
+}
+
+.education,
+.experience {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.projectCaurosel {
+  flex-basis: 20em;
+  flex-grow: 1;
+}
+
+.projectDetails {
+  flex-grow: 9999;
+}
+
+.technology .techName {
+  @apply hidden font-bold transition-all duration-500 ease-in;
+}
+
+.technology:hover .techName {
+  @apply block absolute bottom-[-1.3em] left-1/2 translate-x-[-50%] whitespace-nowrap;
+}
+
+.formDiv i::before {
+  @apply top-1/2 translate-x-[-50%];
+}
+
+.skills {
+  @apply grid w-full grid-cols-1 sm:grid-cols-2;
+}
+
+@media screen and (min-width: 640px) {
+  .education,
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  }
+}
