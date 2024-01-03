@@ -1,3 +1,7 @@
+import { motion, useAnimation, useInView } from 'framer-motion'
+import { slidingVariant } from '../Utils/variants'
+import { useEffect, useRef } from 'react'
+
 interface SchoolProps {
   id: number
   institution: string
@@ -10,9 +14,25 @@ interface SchoolProps {
   highlights: string[]
 }
 
-const School = ({ data }: { data: SchoolProps }) => {
+const School = ({ data, index }: { data: SchoolProps; index: number }) => {
+  const controls = useAnimation()
+  const ref = useRef(null)
+  const inView = useInView(ref)
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [ref, inView])
+
   return (
-    <div className='flex flex-wrap sm:flex-nowrap px-2 items-start gap-2 w-full'>
+    <motion.div
+      ref={ref}
+      variants={slidingVariant(index)}
+      initial='initial'
+      animate={controls}
+      className='flex flex-wrap sm:flex-nowrap px-2 items-start gap-2 w-full'
+    >
       <img
         src={data.logo}
         alt={data.institution}
@@ -36,7 +56,7 @@ const School = ({ data }: { data: SchoolProps }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

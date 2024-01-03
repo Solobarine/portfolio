@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion'
 import Technology from './Technology'
+import { slidingVariant } from '../Utils/variants'
 
 interface ProjectProps {
   id: number
@@ -14,14 +16,15 @@ interface ProjectProps {
 
 const Project = ({
   data,
+  index,
   posStyle,
 }: {
   data: ProjectProps
+  index: number
   posStyle: string
 }) => {
   const [imageIndex, setImageIndex] = useState(0)
   const next = () => {
-
     setImageIndex(imageIndex + 1)
     if (imageIndex === data.images.length - 1) {
       setImageIndex(0)
@@ -38,9 +41,27 @@ const Project = ({
       setImageIndex(imageIndex - 1)
     }
   }
+
+  const controls = useAnimation()
+  const ref = useRef(null)
+  const inView = useInView(ref)
+
+  useEffect(() => {
+    console.log(inView)
+
+    if (inView) {
+      controls.start('visible')
+    }
+    console.log(inView)
+  }, [controls, inView])
+
   return (
-    <div
-      className={`project flex flex-wrap items-center w-fit gap-2 max-w-[50em] transition-all duration-500 ease-in bg-gray-100 shadow-gray-400 shadow-lg hover:shadow-emerald-300 mb-6 border border-gray-300 rounded-lg ${posStyle}`}
+    <motion.div
+      ref={ref}
+      variants={slidingVariant(index)}
+      initial='initial'
+      animate={controls}
+      className={`project mx-auto mb-10 flex flex-wrap items-center w-fit gap-2 max-w-[50em] transition-all duration-500 ease-in bg-gray-100 shadow-gray-400 shadow-lg hover:shadow-emerald-300 mb-6 border border-gray-300 rounded-lg ${posStyle}`}
     >
       <div className='projectCaurosel'>
         <div className='relative aspect-video bg-stone-300 w-full'>
@@ -139,7 +160,7 @@ const Project = ({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

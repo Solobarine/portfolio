@@ -1,3 +1,7 @@
+import { motion, useAnimation, useInView } from 'framer-motion'
+import { staggerVariant } from '../Utils/variants'
+import { useEffect, useRef } from 'react'
+
 interface ExperienceProps {
   id: number
   company: string
@@ -9,9 +13,31 @@ interface ExperienceProps {
   highlights: string[]
 }
 
-const Position = ({ data }: { data: ExperienceProps }) => {
+const Position = ({
+  data,
+  index,
+}: {
+  data: ExperienceProps
+  index: number
+}) => {
+  const controls = useAnimation()
+  const ref = useRef(null)
+  const inView = useInView(ref)
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+
   return (
-    <div className='flex flex-wrap sm:flex-nowrap px-2 items-start gap-2 w-full'>
+    <motion.div
+      ref={ref}
+      variants={staggerVariant(index)}
+      initial='initial'
+      animate={controls}
+      className='flex flex-wrap sm:flex-nowrap items-start gap-2 w-full'
+    >
       <img
         src={data.logo}
         alt={data.company}
@@ -34,7 +60,7 @@ const Position = ({ data }: { data: ExperienceProps }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
