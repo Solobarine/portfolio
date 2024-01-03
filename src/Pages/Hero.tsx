@@ -20,7 +20,7 @@ const Hero = () => {
       <Socials customStyles='py-6 text-gray-200 hidden sm:flex sm:flex-col sm:absolute sm:left-5 sm:top-1/2 sm:translate-y-[-50%]' />
       <div className='mt-5'>
         <a
-          href='/downloadables/solly-resume.pdf'
+          href='/downloadables/solly_resume.pdf'
           download
           className='bg-sky-500 block w-fit my-5 px-4 py-3 rounded-lg'
         >
