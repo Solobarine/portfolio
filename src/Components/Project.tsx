@@ -58,7 +58,7 @@ const Project = ({
   return (
     <motion.div
       ref={ref}
-      variants={slidingVariant(index)}
+      variants={slidingVariant()}
       initial='initial'
       animate={controls}
       className={`project mx-auto mb-10 flex flex-wrap items-center w-fit gap-2 max-w-[50em] transition-all duration-500 ease-in bg-gray-100 shadow-gray-400 shadow-lg hover:shadow-emerald-300 mb-6 border border-gray-300 rounded-lg ${posStyle}`}

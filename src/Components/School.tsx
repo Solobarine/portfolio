@@ -28,7 +28,7 @@ const School = ({ data, index }: { data: SchoolProps; index: number }) => {
   return (
     <motion.div
       ref={ref}
-      variants={slidingVariant(index)}
+      variants={slidingVariant()}
       initial='initial'
       animate={controls}
       className='flex flex-wrap sm:flex-nowrap px-2 items-start gap-2 w-full'
