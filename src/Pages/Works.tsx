@@ -8,17 +8,19 @@ const Works = () => {
       <h2 className='text-3xl font-bold text-center p-2 py-6 mb-2'>
         Best Works
       </h2>
-      <div className='flex items-center gap-4 justify-center flex-wrap'>
+      <div>
         {fullstack.map((data, index) => (
           <Project
             key={index}
             data={data}
+            index={index}
             posStyle={`${index % 2 !== 0 ? '' : ''}`}
           />
         ))}
         {frontend.map((data, index) => (
           <Project
             key={index}
+            index={index}
             data={data}
             posStyle={`${index % 2 !== 0 ? '' : ''}`}
           />
