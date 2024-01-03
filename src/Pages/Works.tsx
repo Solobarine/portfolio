@@ -13,14 +13,12 @@ const Works = () => {
           <Project
             key={index}
             data={data}
-            index={index}
             posStyle={`${index % 2 !== 0 ? '' : ''}`}
           />
         ))}
         {frontend.map((data, index) => (
           <Project
             key={index}
-            index={index}
             data={data}
             posStyle={`${index % 2 !== 0 ? '' : ''}`}
           />
