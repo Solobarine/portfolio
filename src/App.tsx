@@ -11,7 +11,7 @@ import Skills from './Components/Skills'
 
 function App() {
   return (
-    <div className='app grid min-h-screen'>
+    <div className='app grid min-h-screen relative'>
       <NavBar />
       <Hero />
       <Services />
