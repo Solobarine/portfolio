@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -626,14 +630,18 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -716,16 +724,24 @@ video {
   height: 100vh;
 }
 
+.max-h-\[20em\] {
+  max-height: 20em;
+}
+
+.max-h-\[30em\] {
+  max-height: 30em;
+}
+
+.max-h-\[35em\] {
+  max-height: 35em;
+}
+
 .min-h-\[12em\] {
   min-height: 12em;
 }
 
 .min-h-\[14em\] {
   min-height: 14em;
-}
-
-.min-h-\[60dvh\] {
-  min-height: 60dvh;
 }
 
 .min-h-screen {
@@ -765,6 +781,14 @@ video {
   width: 100%;
 }
 
+.min-w-\[12em\] {
+  min-width: 12em;
+}
+
+.min-w-\[15em\] {
+  min-width: 15em;
+}
+
 .max-w-\[25em\] {
   max-width: 25em;
 }
@@ -773,8 +797,8 @@ video {
   max-width: 30em;
 }
 
-.max-w-\[70em\] {
-  max-width: 70em;
+.max-w-\[50em\] {
+  max-width: 50em;
 }
 
 .shrink {
@@ -1350,12 +1374,16 @@ a.active {
     margin-right: 6rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
   }
 
-  .sm\:min-h-\[95dvh\] {
-    min-height: 95dvh;
+  .sm\:max-h-\[35em\] {
+    max-height: 35em;
   }
 
   .sm\:translate-y-\[-50\%\] {
