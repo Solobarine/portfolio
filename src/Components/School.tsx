@@ -14,7 +14,7 @@ interface SchoolProps {
   highlights: string[]
 }
 
-const School = ({ data, index }: { data: SchoolProps; index: number }) => {
+const School = ({ data }: { data: SchoolProps}) => {
   const controls = useAnimation()
   const ref = useRef(null)
   const inView = useInView(ref)
@@ -23,7 +23,7 @@ const School = ({ data, index }: { data: SchoolProps; index: number }) => {
     if (inView) {
       controls.start('visible')
     }
-  }, [ref, inView])
+  }, [ref, inView, controls])
 
   return (
     <motion.div

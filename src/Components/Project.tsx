@@ -16,11 +16,9 @@ interface ProjectProps {
 
 const Project = ({
   data,
-  index,
   posStyle,
 }: {
   data: ProjectProps
-  index: number
   posStyle: string
 }) => {
   const [imageIndex, setImageIndex] = useState(0)
