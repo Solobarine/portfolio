@@ -54,7 +54,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className='p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-stone-500 grow max-w-[25em]'>
+        <div className='p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-stone-500 grow w-full min-w-[12em] max-w-[25em]'>
           <h2 className='text-lg pb-2 font-bold'>Testing and Others</h2>
           <hr className='border-emerald-500' />
           <div className='skills'>
