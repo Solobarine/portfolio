@@ -6,7 +6,7 @@ export const slidingVariant = () => {
       opacity: 1,
       transition: {
         type: 'bounce',
-        delay: 0.7,
+        delay: 0.4,
       },
     },
   }

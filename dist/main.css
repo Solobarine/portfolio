@@ -728,14 +728,6 @@ video {
   max-height: 20em;
 }
 
-.max-h-\[30em\] {
-  max-height: 30em;
-}
-
-.max-h-\[35em\] {
-  max-height: 35em;
-}
-
 .min-h-\[12em\] {
   min-height: 12em;
 }
