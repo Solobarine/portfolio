@@ -7,7 +7,7 @@ const Experience = () => {
       <h2 className='text-3xl font-bold py-3 text-center pt-16'>Experience</h2>
       <div className='experience flex items-start justify-center flex-wrap gap-4'>
         {experience.map((data, index) => (
-          <Position key={index} data={data} index={index} />
+          <Position key={index} data={data} />
         ))}
       </div>
     </div>
