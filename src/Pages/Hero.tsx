@@ -3,7 +3,7 @@ import Socials from '../Components/Socials'
 const Hero = () => {
   return (
     <div
-      className='relative sm:pl-36 py-14 sm:py-20 bg-gradient-to-r h-screen max-h-[20em] sm:max-h-[35em] from-emerald-700 to-slate-600 text-gray-100 relative'
+      className='relative sm:pl-36 py-14 sm:py-20 bg-gradient-to-r h-screen max-h-screen sm:max-h-[35em] from-emerald-700 to-slate-600 text-gray-100 grid place-content-center gap-3 p-2'
       id='hero'
     >
       <p>Hi, My Name is</p>
@@ -13,7 +13,7 @@ const Hero = () => {
       <h1 className='text-2xl sm:text-5xl font-bold sm:py-4 text-stone-400'>
         I build Full Stack Applications
       </h1>
-      <small className='font-bold hidden sm:block'>
+      <small className='font-bold sm:block'>
         I am a Software Developer adept in Creating Memorable Digital
         Experiences. <br /> Let's Build Something Today.
       </small>
@@ -28,7 +28,7 @@ const Hero = () => {
         </a>
         <div
           className='contra-hire-me-button'
-          data-analyticsUserId='19a46a54-c52f-45bf-bf5e-82d33b8f7eb7'
+          data-analyticsuserid='19a46a54-c52f-45bf-bf5e-82d33b8f7eb7'
           data-theme='dark'
           data-username='solomon_akpuru'
         ></div>

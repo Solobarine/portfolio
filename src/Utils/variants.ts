@@ -1,12 +1,13 @@
 export const slidingVariant = () => {
   return {
-    initial: { scale: 0, opacity: 0 },
+    initial: { scale: 0, opacity: 0, translateX: '-10em' },
     visible: {
       scale: 1,
+      translateX: 0,
       opacity: 1,
       transition: {
         type: 'bounce',
-        delay: 0.4,
+        delay: 0.7,
       },
     },
   }
@@ -22,10 +23,24 @@ export const staggerVariant = (index: number) => {
       translateX: 0,
       opacity: 1,
       transition: {
-        delay: 1 + 1 * index,
+        delay: 0.1 + 0.1 * index,
       },
     },
   }
 }
 
-export const bounceVariant = {}
+export const fadeInVariant = (index: number) => {
+  return {
+    initial: {
+      opacity: 0,
+      translateZ: index % 2 === 0 ? '-15em' : '15em',
+    },
+    visible: {
+      opacity: 1,
+      translateZ: 0,
+      transition: {
+        delay: 1.6,
+      },
+    },
+  }
+}

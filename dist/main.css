@@ -728,6 +728,10 @@ video {
   max-height: 20em;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .min-h-\[12em\] {
   min-height: 12em;
 }
@@ -844,6 +848,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .place-items-center {
@@ -1376,6 +1384,10 @@ a.active {
 
   .sm\:max-h-\[35em\] {
     max-height: 35em;
+  }
+
+  .sm\:max-h-screen {
+    max-height: 100vh;
   }
 
   .sm\:translate-y-\[-50\%\] {

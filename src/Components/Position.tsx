@@ -1,5 +1,5 @@
 import { motion, useAnimation, useInView } from 'framer-motion'
-import { staggerVariant } from '../Utils/variants'
+import { slidingVariant } from '../Utils/variants'
 import { useEffect, useRef } from 'react'
 
 interface ExperienceProps {
@@ -33,7 +33,7 @@ const Position = ({
   return (
     <motion.div
       ref={ref}
-      variants={staggerVariant(index)}
+      variants={slidingVariant()}
       initial='initial'
       animate={controls}
       className='flex flex-wrap sm:flex-nowrap items-start gap-2 w-full'

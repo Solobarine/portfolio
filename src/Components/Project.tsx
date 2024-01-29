@@ -123,12 +123,14 @@ const Project = ({
             {data.languages.map((language, index) =>
               language.icon ? (
                 <Technology
+                  key={index}
                   name={language.name}
                   icon={language.icon}
                   keyId={index}
                 />
               ) : (
                 <Technology
+                  key={index}
                   name={language.name}
                   imagePath={language.image}
                   keyId={index}
@@ -143,12 +145,14 @@ const Project = ({
             {data.frameworksAndTools.map((language, index) =>
               language.icon ? (
                 <Technology
+                  key={index}
                   name={language.name}
                   icon={language.icon}
                   keyId={index}
                 />
               ) : (
                 <Technology
+                  key={index}
                   name={language.name}
                   imagePath={language.image}
                   keyId={index}
