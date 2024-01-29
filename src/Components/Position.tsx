@@ -13,13 +13,7 @@ interface ExperienceProps {
   highlights: string[]
 }
 
-const Position = ({
-  data,
-  index,
-}: {
-  data: ExperienceProps
-  index: number
-}) => {
+const Position = ({ data }: { data: ExperienceProps }) => {
   const controls = useAnimation()
   const ref = useRef(null)
   const inView = useInView(ref)
