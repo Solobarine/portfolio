@@ -6,15 +6,15 @@ const Hero = () => {
       className='relative py-10 px-2 sm:pl-32 min-h-[70dvh] sm:min-h-screen'
       id='hero'
     >
-      <div className='z-10'>
-        <h1 className='text-2xl sm:text-3xl font-bold py-2 text-gray-400'>
-          Hello, I am <br />
+      <div className='z-10 mt-[15em] sm:mt-0'>
+        <h1 className='text-2xl sm:text-3xl font-bold py-2 text-stone-600'>
+          Hello, I'm <br />
           Solomon <span className='text-sky-500'>Akpuru</span>
         </h1>
-        <h1 className='text-2xl sm:text-3xl font-bold sm:py-4 text-stone-400'>
+        <h1 className='text-2xl sm:text-3xl font-bold text-stone-600'>
           I build Full Stack Applications
         </h1>
-        <small className='font-bold sm:block'>
+        <small className='font-bold sm:block text-emerald-600 text-xl pt-4'>
           I am a Software Developer adept in Creating Memorable Digital
           Experiences. <br /> Let's Build Something Today.
         </small>
