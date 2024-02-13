@@ -1,5 +1,3 @@
-import { Variant } from "framer-motion";
-
 export const slidingVariant = () => {
   return {
     initial: { scale: 0, opacity: 0, translateX: "-10em" },
