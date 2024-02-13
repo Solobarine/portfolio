@@ -1,11 +1,11 @@
-import Project from '../Components/Project'
-import fullstack from '../Data/Projects/fullstack'
-import frontend from '../Data/Projects/frontend'
+import Project from "../Components/Project";
+import fullstack from "../Data/Projects/fullstack";
+import frontend from "../Data/Projects/frontend";
 
 const Works = () => {
   return (
-    <section className='sm:px-3 pt-16' id='projects'>
-      <h2 className='text-3xl font-bold text-center p-2 py-6 mb-2'>
+    <section className="sm:px-3 pt-16 hidden" id="projects">
+      <h2 className="text-3xl font-bold text-center p-2 py-6 mb-2">
         Best Works
       </h2>
       <div>
@@ -13,19 +13,19 @@ const Works = () => {
           <Project
             key={index}
             data={data}
-            posStyle={`${index % 2 !== 0 ? '' : ''}`}
+            posStyle={`${index % 2 !== 0 ? "" : ""}`}
           />
         ))}
         {frontend.map((data, index) => (
           <Project
             key={index}
             data={data}
-            posStyle={`${index % 2 !== 0 ? '' : ''}`}
+            posStyle={`${index % 2 !== 0 ? "" : ""}`}
           />
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;
