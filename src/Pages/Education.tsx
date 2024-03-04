@@ -1,17 +1,19 @@
-import School from '../Components/School'
-import education from '../Data/education'
+import School from "../Components/School";
+import education from "../Data/education";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 
 const Education = () => {
   return (
-    <div className='pt-12 px-2' id='education'>
-      <h2 className='text-3xl font-bold text-center py-6'>Education</h2>
-      <div className='education flex items-start justify-center flex-wrap gap-4'>
-        {education.map(data => (
+    <div className="pt-12 px-2" id="education">
+      <h2 className="text-3xl font-bold text-center py-6">Education</h2>
+
+      <VerticalTimeline>
+        {education.map((data) => (
           <School key={data.id} data={data} />
         ))}
-      </div>
+      </VerticalTimeline>
     </div>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;
