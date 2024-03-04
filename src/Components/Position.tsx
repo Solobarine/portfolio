@@ -1,61 +1,59 @@
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { slidingVariant } from '../Utils/variants'
-import { useEffect, useRef } from 'react'
+import { useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 interface ExperienceProps {
-  id: number
-  company: string
-  logo: string
-  dateStarted: string
-  dateEnded: string
-  location: string
-  jobTitle: string
-  highlights: string[]
+  id: number;
+  company: string;
+  logo: string;
+  dateStarted: string;
+  dateEnded: string;
+  location: string;
+  jobTitle: string;
+  highlights: string[];
 }
 
+const Icon = ({ logo, company }: { logo: string; company: string }) => {
+  return <img src={logo} alt={company} />;
+};
+
 const Position = ({ data }: { data: ExperienceProps }) => {
-  const controls = useAnimation()
-  const ref = useRef(null)
-  const inView = useInView(ref)
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref);
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible')
+      controls.start("visible");
     }
-  }, [controls, inView])
+  }, [controls, inView]);
 
   return (
-    <motion.div
+    <VerticalTimelineElement
       ref={ref}
-      variants={slidingVariant()}
-      initial='initial'
-      animate={controls}
-      className='flex flex-wrap sm:flex-nowrap items-start gap-2 w-full'
+      date={`${data.dateStarted} - ${data.dateEnded}`}
+      icon={<Icon logo={data.logo} company={data.company} />}
+      iconStyle={{
+        overflow: "hidden",
+        backgroundColor: "#ccc",
+        display: "grid",
+        placeItems: "center",
+      }}
     >
-      <img
-        src={data.logo}
-        alt={data.company}
-        className='w-12 aspect-square rounded-full bg-emerald-100'
-      />
-      <div className='rounded-lg bg-gray-100 py-6 px-3 transition-all duration-500 ease-in hover:bg-emerald-200 hover:shadow-md grow'>
-        <h2 className='text-lg font-bold'>{data.company}</h2>
-        <div className='flex items-center justify-between py-2 gap-3'>
-          <p>
-            {data.dateStarted} - {data.dateEnded}
-          </p>
-          <p className='font-bold'>{data.location}</p>
-        </div>
-        <p className='font-bold pb-2'>{data.jobTitle}</p>
-        <ul className='list-disc list-inside grid gap-2 text-sm'>
-          {data.highlights.map(highlight => (
-            <li key={highlight} className='text-justify'>
+      <div className="rounded-lg bg-teal-200 transition-all p-2 duration-500 ease-in hover:bg-emerald-200 hover:shadow-md grow">
+        <h2 className="text-base font-semibold">{data.company}</h2>
+        <h4 className="text-base py-1 font-semibold">{data.location}</h4>
+        <p className="font-bold pb-2">{data.jobTitle}</p>
+        <ul className="list-disc list-inside grid gap-2 text-sm">
+          {data.highlights.map((highlight) => (
+            <li key={highlight} className="text-justify">
               {highlight}
             </li>
           ))}
         </ul>
       </div>
-    </motion.div>
-  )
-}
+    </VerticalTimelineElement>
+  );
+};
 
-export default Position
+export default Position;

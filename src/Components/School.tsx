@@ -1,63 +1,57 @@
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { slidingVariant } from '../Utils/variants'
-import { useEffect, useRef } from 'react'
+import { useAnimation, useInView } from "framer-motion";
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { useEffect, useRef } from "react";
 
 interface SchoolProps {
-  id: number
-  institution: string
-  logo: string
-  dateStarted: string
-  dateEnded: string
-  location: string
-  course: string
-  degree: string
-  highlights: string[]
+  id: number;
+  institution: string;
+  logo: string;
+  dateStarted: string;
+  dateEnded: string;
+  location: string;
+  course: string;
+  degree: string;
+  highlights: string[];
 }
 
-const School = ({ data }: { data: SchoolProps}) => {
-  const controls = useAnimation()
-  const ref = useRef(null)
-  const inView = useInView(ref)
+const Icon = ({ logo, institution }: { logo: string; institution: string }) => {
+  return <img src={logo} alt={institution} />;
+};
+
+const School = ({ data }: { data: SchoolProps }) => {
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref);
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible')
+      controls.start("visible");
     }
-  }, [ref, inView, controls])
+  }, [ref, inView, controls]);
 
   return (
-    <motion.div
+    <VerticalTimelineElement
       ref={ref}
-      variants={slidingVariant()}
-      initial='initial'
-      animate={controls}
-      className='flex flex-wrap sm:flex-nowrap px-2 items-start gap-2 w-full'
+      date={`${data.dateStarted} - ${data.dateEnded}`}
+      icon={<Icon logo={data.logo} institution={data.institution} />}
     >
-      <img
-        src={data.logo}
-        alt={data.institution}
-        className='w-12 aspect-square shrink-0 rounded-full bg-emerald-100'
-      />
-      <div className='p-2 rounded-lg bg-gray-100 px-3 py-6 grow transition-all duration-500 ease-in hover:bg-emerald-200 hover:shadow-md'>
-        <h2 className='text-lg font-bold'>{data.institution}</h2>
-        <div className='flex flex-wrap items-center justify-between py-2'>
-          <p>
-            {data.dateStarted} - {data.dateEnded}
-          </p>
-          <p className='font-bold'>{data.location}</p>
+      <div className="p-2 rounded-lg bg-gray-300 px-3 py-6 grow transition-all duration-500 ease-in hover:bg-emerald-200 hover:shadow-md">
+        <h2 className="text-base font-semibold">{data.institution}</h2>
+        <h6 className="font-semibold">{data.location}</h6>
+        <div className="flex items-center justify-between py-1">
+          <h3 className="font-semibold">{data.course}</h3>
+          <h4 className="font-semibold">{data.degree}</h4>
         </div>
-        <p className='font-bold pb-2'>{data.course}</p>
-        <p className='font-bold pb-2'>{data.degree}</p>
-        <ul className='list-disc list-inside grid gap-2 text-sm'>
-          {data.highlights.map(highlight => (
-            <li key={highlight} className='text-justify'>
+        <ul className="list-disc list-inside grid gap-2 text-sm">
+          {data.highlights.map((highlight) => (
+            <li key={highlight} className="text-justify">
               {highlight}
             </li>
           ))}
         </ul>
       </div>
-    </motion.div>
-  )
-}
+    </VerticalTimelineElement>
+  );
+};
 
-export default School
+export default School;

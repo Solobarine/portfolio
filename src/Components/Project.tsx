@@ -14,13 +14,7 @@ interface ProjectProps {
   links: { name: string; link: string }[];
 }
 
-const Project = ({
-  data,
-  posStyle,
-}: {
-  data: ProjectProps;
-  posStyle: string;
-}) => {
+const Project = ({ data }: { data: ProjectProps }) => {
   const [imageIndex, setImageIndex] = useState(0);
   const next = () => {
     setImageIndex(imageIndex + 1);
@@ -59,7 +53,7 @@ const Project = ({
       variants={staggerVariant}
       initial="initial"
       animate={controls}
-      className={`project mx-auto flex flex-wrap items-center w-fit gap-2 max-w-[50em] transition-all duration-500 ease-in bg-gray-100 shadow-gray-400 shadow-lg hover:shadow-emerald-300 mb-6 border border-gray-300 rounded-lg ${posStyle}`}
+      className="fixed top-1/2 mx-auto flex flex-wrap items-center w-full gap-2 max-w-[50em] bg-gray-100 shadow-gray-400 shadow-lg hover:shadow-emerald-300 mb-6 border border-gray-300 rounded-lg z-40"
     >
       <div className="projectCaurosel">
         <div className="relative aspect-video bg-stone-300 w-full">

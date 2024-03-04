@@ -14,7 +14,7 @@ const Skills = () => {
         My Skills
       </h1>
       <div className="p-2 flex items-center flex-wrap justify-around gap-16">
-        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-stone-500 w-full grow max-w-[25em]">
+        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-slate-500 w-full grow max-w-[25em]">
           <h2 className="text-lg pb-2 font-bold">Languages</h2>
           <hr className="border-emerald-500" />
           <div className="skills">
@@ -27,7 +27,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-stone-500 grow w-full max-w-[25em]">
+        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-slate-500 grow w-full max-w-[25em]">
           <h2 className="text-lg pb-2 font-bold">Frontend</h2>
           <hr className="border-emerald-500" />
           <div className="skills">
@@ -44,7 +44,7 @@ const Skills = () => {
             )}
           </div>
         </div>
-        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-stone-500 grow max-w-[25em]">
+        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-slate-500 grow max-w-[25em]">
           <h2 className="text-lg pb-2 font-bold">Backend</h2>
           <hr className="border-emerald-500" />
           <div className="skills">
@@ -57,7 +57,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-stone-500 grow w-full min-w-[12em] max-w-[25em]">
+        <div className="p-3 border rounded-lg border-emerald-500 bg-gray-100 shadow-lg shadow-slate-500 grow w-full min-w-[12em] max-w-[25em]">
           <h2 className="text-lg pb-2 font-bold">Testing and Others</h2>
           <hr className="border-emerald-500" />
           <div className="skills">
