@@ -33,16 +33,19 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         ))}
       </div>
       <div className="flex items-center justify-center gap-6 mt-2 py-1">
-        {data.links.map((link, index) => (
-          <Link
-            key={index}
-            to={link.link}
-            target="_blank"
-            className="text-sm font-bold text-blue-500"
-          >
-            {link.name}
-          </Link>
-        ))}
+        {data.links.map(
+          (link, index) =>
+            link.name === "See Code" && (
+              <Link
+                key={index}
+                to={link.link}
+                target="_blank"
+                className="text-sm font-bold text-blue-500"
+              >
+                {link.name}
+              </Link>
+            )
+        )}
       </div>
     </div>
   );
