@@ -40,7 +40,7 @@ const Position = ({ data }: { data: ExperienceProps }) => {
         placeItems: "center",
       }}
     >
-      <div className="rounded-lg bg-teal-200 transition-all p-2 duration-500 ease-in hover:bg-emerald-200 hover:shadow-md grow">
+      <div className="rounded-lg transition-all p-2 duration-500 ease-in grow">
         <h2 className="text-base font-semibold">{data.company}</h2>
         <h4 className="text-base py-1 font-semibold">{data.location}</h4>
         <p className="font-bold pb-2">{data.jobTitle}</p>

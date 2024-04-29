@@ -13,7 +13,7 @@ interface ProjectProps {
 
 const ProjectPreview = ({ data }: { data: ProjectProps }) => {
   return (
-    <div className="p-3 border-lg w-full max-w-[25em] shadow-2xl shadow-slate-500 rounded-md">
+    <div className="p-3 border-lg w-full max-w-[25em] shadow-lg shadow-slate-300 rounded-md">
       <img src={data.images[0]} alt="" className="w-full aspect-video" />
       <h2 className="font-2xl font-semibold">{data.name}</h2>
       <p className="mt-2 text-sm">{data.description}</p>

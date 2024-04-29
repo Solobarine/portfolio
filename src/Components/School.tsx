@@ -35,14 +35,14 @@ const School = ({ data }: { data: SchoolProps }) => {
       date={`${data.dateStarted} - ${data.dateEnded}`}
       icon={<Icon logo={data.logo} institution={data.institution} />}
     >
-      <div className="p-2 rounded-lg bg-gray-300 px-3 py-6 grow transition-all duration-500 ease-in hover:bg-emerald-200 hover:shadow-md">
-        <h2 className="text-base font-semibold">{data.institution}</h2>
+      <div className="p-2 rounded-lg px-3 py-6 grow transition-all duration-500 ease-in">
+        <h2 className="text-lg font-semibold">{data.institution}</h2>
         <h6 className="font-semibold">{data.location}</h6>
-        <div className="flex items-center justify-between py-1">
+        <div className="flex items-center justify-between text-sm py-1">
           <h3 className="font-semibold">{data.course}</h3>
           <h4 className="font-semibold">{data.degree}</h4>
         </div>
-        <ul className="list-disc list-inside grid gap-2 text-sm">
+        <ul className="list-disc list-inside grid gap-2 mt-4 text-sm">
           {data.highlights.map((highlight) => (
             <li key={highlight} className="text-justify">
               {highlight}
