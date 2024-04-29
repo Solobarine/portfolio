@@ -3,12 +3,14 @@ import services from "../Data/services";
 const About = () => {
   return (
     <div
-      className="flex flex-wrap lg:flex-nowrap gap-2 pt-20 max-w-[60em] mx-auto px-4 sm:px-10 gap-y-4"
+      className="flex flex-wrap lg:flex-nowrap gap-2 bg-zinc-200 py-20 px-4 sm:px-40 gap-y-4"
       id="about"
     >
       <div className="w-full max-w-[30em] mx-auto grow">
-        <h2 className="text-2xl font-bold text-center">About Me</h2>
-        <p className="text-justify w-full pt-2 text-sm">
+        <h2 className="text-3xl sm:text-5xl font-semibold text-center text-nowrap">
+          About Me
+        </h2>
+        <p className="text-justify w-full mt-6 text-sm">
           Come explore the realm of web development with me! With a knack for
           crafting intricate web applications and a passion for adhering to
           industry best practices like version control and rigorous testing, I
