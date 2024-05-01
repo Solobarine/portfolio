@@ -7,7 +7,7 @@ const Hero = () => {
       id="hero"
     >
       <div className="z-10 mt-[15em] sm:mt-0">
-        <h1 className="text-2xl sm:text-6xl font-bold py-2 text-stone-600">
+        <h1 className="text-2xl sm:text-6xl font-bold pt-20 py-2 text-stone-600">
           Hello, I'm <br />
           Solomon <span className="text-sky-500">Akpuru</span>
         </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
           ></div>
         </div>
       </div>
-      <Socials customStyles="z-20 sm:absolute sm:left-7 sm:top-0 sm:flex sm:flex-col sm:min-h-screen sm:justify-center gap-2" />
+      <Socials customStyles="z-20 text-xl sm:text-3xl sm:absolute sm:left-7 sm:top-0 sm:flex sm:flex-col sm:min-h-screen sm:justify-center gap-2" />
       <img
         src="/logo.png"
         alt=""

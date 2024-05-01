@@ -14,11 +14,11 @@ function App() {
     <div className="app grid min-h-screen relative">
       <NavBar />
       <Hero />
-      <Skills />
-      <About />
-      <Experience />
-      <Education />
       <Works />
+      <About />
+      <Skills />
+      <Education />
+      <Experience />
       <Contact />
       <Footer />
     </div>
