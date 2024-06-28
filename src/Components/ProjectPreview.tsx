@@ -21,7 +21,7 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         {data.frameworksAndTools.map((framework, index) => (
           <div
             key={index}
-            className="flex items-center gap-3 flex-wrap px-1 py-2 rounded-lg bg-emerald-200"
+            className="flex items-center gap-3 flex-wrap px-4 py-2 rounded-xl border-2 border-emerald-300 bg-white shadow-lg"
           >
             {framework.icon ? (
               <i className={`${framework.icon} text-xl`}></i>

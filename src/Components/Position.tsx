@@ -7,6 +7,7 @@ interface ExperienceProps {
   company: string;
   logo: string;
   dateStarted: string;
+  color?: string;
   dateEnded: string;
   location: string;
   jobTitle: string;
@@ -14,7 +15,7 @@ interface ExperienceProps {
 }
 
 const Icon = ({ logo, company }: { logo: string; company: string }) => {
-  return <img src={logo} alt={company} />;
+  return <img src={logo} alt={company} className="object-cover" />;
 };
 
 const Position = ({ data }: { data: ExperienceProps }) => {
@@ -35,7 +36,7 @@ const Position = ({ data }: { data: ExperienceProps }) => {
       icon={<Icon logo={data.logo} company={data.company} />}
       iconStyle={{
         overflow: "hidden",
-        backgroundColor: "#ccc",
+        backgroundColor: data.color ? data.color : "#ccc",
         display: "grid",
         placeItems: "center",
       }}
