@@ -14,10 +14,11 @@ const Hero = () => {
         <h1 className="text-2xl sm:text-3xl font-bold text-stone-600">
           I build Full Stack Applications
         </h1>
-        <small className="font-bold sm:block text-slate-600 text-xl pt-4">
-          I am a Software Developer adept in Creating Memorable Digital
-          Experiences. <br /> Let's Build Something Today.
+        <small className="font-semibold sm:block text-slate-600 text-xl pt-4">
+          I am a Software Developer adept in <br /> Creating Memorable Digital
+          Experiences.
         </small>
+        <small className="mt-1 text-lg">Let's Build Something Today.</small>
         <div className="mt-5 flex items-center gap-3">
           <a
             href="/downloadables/solly_resume.pdf"
