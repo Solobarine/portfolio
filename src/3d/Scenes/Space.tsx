@@ -4,6 +4,7 @@ import { OrbitControls, Preload } from "@react-three/drei";
 import { planets } from "../../Data/Planets";
 import Planet from "./Planet";
 import Sun from "./Sun";
+import Invite from "../../Components/Invite";
 
 const Space = () => {
   return (
@@ -37,6 +38,7 @@ const Space = () => {
         )}
         <Preload all />
       </Canvas>
+      <Invite />
     </div>
   );
 };
