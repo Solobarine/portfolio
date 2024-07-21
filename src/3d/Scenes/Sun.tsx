@@ -1,4 +1,3 @@
-import { Sphere } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";

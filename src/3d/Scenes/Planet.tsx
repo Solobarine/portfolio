@@ -27,7 +27,7 @@ const Planet = ({
   if (ref.current) {
     //ref.current?.rotateY(23.4);
   }
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     setAngle((prev) => prev + delta * speedFactor);
 
     const x = orbitRadius * Math.cos(angle);

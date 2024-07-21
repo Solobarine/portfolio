@@ -1,5 +1,4 @@
 import { Points, PointMaterial } from "@react-three/drei";
-// eslint-disable-nextline
 import * as random from "maath/random/dist/maath-random.esm";
 import { useRef } from "react";
 

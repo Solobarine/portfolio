@@ -1,5 +1,3 @@
-import ContactForm from "../Components/ContactForm";
-
 const Contact = () => {
   return (
     <div className="p-2 bg-zinc-200 py-20" id="contact">
