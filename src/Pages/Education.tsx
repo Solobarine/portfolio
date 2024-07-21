@@ -4,7 +4,7 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 
 const Education = () => {
   return (
-    <div className="py-20 px-2 sm:px-32 bg-zinc-300" id="education">
+    <div className="py-20 px-2 sm:px-32" id="education">
       <h2 className="text-3xl sm:text-5xl font-semibold text-center py-6">
         Education
       </h2>

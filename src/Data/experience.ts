@@ -2,6 +2,7 @@ const experience = [
   {
     id: 0,
     company: "Digital Factory",
+    website: "https://www.dgtl-factory.com",
     logo: "/workplace/dgtf-logo.png",
     dateStarted: "May 2024",
     dateEnded: "Present",
@@ -16,7 +17,23 @@ const experience = [
   },
   {
     id: 1,
+    company: "Genie AI",
+    logo: "/workplace/genieailabs.jpeg",
+    website: "https://genieai.io",
+    dateStarted: "July 2024",
+    dateEnded: "Present",
+    jobTitle: "Software Engineer Intern",
+    location: "Toronto, Canada (Remote)",
+    highlights: [
+      "Updated the company website to align precisely with the Figma design specifications.",
+      "Implemented Image lazy loading improving site performance.",
+      "Add Animations to improve site interactiveness and user appeal.",
+    ],
+  },
+  {
+    id: 2,
     company: "Savasana AI",
+    website: "https://www.linkedin.com/company/savasana-ai",
     logo: "/workplace/savasana.jpg",
     dateStarted: "November 2023",
     dateEnded: "February 2024",
@@ -29,8 +46,9 @@ const experience = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: "Sollyverse",
+    website: "https://sollyverse.vercel.app",
     logo: "/workplace/sollyverse.png",
     dateStarted: "January 2023",
     dateEnded: "Present",
@@ -43,8 +61,9 @@ const experience = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: "Network Oil and Gas",
+    website: "https://noandgltd.com",
     logo: "/workplace/nog.jpg",
     dateStarted: "May 2021",
     dateEnded: "August 2021",
