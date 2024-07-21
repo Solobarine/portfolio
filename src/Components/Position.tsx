@@ -5,6 +5,7 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 interface ExperienceProps {
   id: number;
   company: string;
+  website: string;
   logo: string;
   dateStarted: string;
   color?: string;
@@ -42,10 +43,16 @@ const Position = ({ data }: { data: ExperienceProps }) => {
       }}
     >
       <div className="rounded-lg transition-all p-2 duration-500 ease-in grow">
-        <h2 className="text-base font-semibold">{data.company}</h2>
-        <h4 className="text-base py-1 font-semibold">{data.location}</h4>
-        <p className="font-bold pb-2">{data.jobTitle}</p>
-        <ul className="list-disc list-inside grid gap-2 text-sm">
+        <a
+          href={data.website}
+          target="_blank"
+          className="text-base font-semibold"
+        >
+          {data.company}
+        </a>
+        <h4 className="text-base pt-1 font-semibold">{data.location}</h4>
+        <h5 className="font-bold pb-1 m-0">{data.jobTitle}</h5>
+        <ul className="list-disc list-inside grid gap-2 text-sm mt-5">
           {data.highlights.map((highlight) => (
             <li key={highlight} className="text-justify">
               {highlight}

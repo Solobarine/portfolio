@@ -58,3 +58,11 @@ a.active {
     grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
   }
 }
+
+#wormhole {
+  @apply h-screen w-screen;
+}
+
+#explodingLine {
+  @apply w-screen h-screen bg-red-300;
+}

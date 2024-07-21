@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface ProjectProps {
@@ -12,6 +13,10 @@ interface ProjectProps {
 }
 
 const ProjectPreview = ({ data }: { data: ProjectProps }) => {
+  const [name, setName] = useState<{
+    isHovered: boolean;
+    index: null | number;
+  }>({ isHovered: false, index: null });
   return (
     <div className="p-3 border-lg w-full max-w-[25em] shadow-lg shadow-slate-300 rounded-md">
       <img src={data.images[0]} alt="" className="w-full aspect-video" />
@@ -21,14 +26,24 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         {data.frameworksAndTools.map((framework, index) => (
           <div
             key={index}
-            className="flex items-center gap-3 flex-wrap px-4 py-2 rounded-xl border-2 border-emerald-300 bg-white shadow-lg"
+            onMouseEnter={() => setName({ isHovered: true, index })}
+            onMouseLeave={() => setName({ isHovered: false, index: null })}
+            className="flex items-center w-fit flex-wrap px-4 py-2 rounded-xl border-2 border-emerald-300 shadow-lg bg-gray-200 cursor-pointer transition duration-500"
           >
             {framework.icon ? (
               <i className={`${framework.icon} text-xl`}></i>
             ) : (
               <img src={framework.image} alt={framework.name} className="h-6" />
             )}
-            <p className="text-sm font-semibold">{framework.name}</p>
+            <p
+              className={`text-sm font-semibold transition duration-500 ${
+                name.isHovered && name.index === index
+                  ? "scale-100 ml-3"
+                  : "scale-0 ml-0"
+              }`}
+            >
+              {name.isHovered && name.index === index ? framework.name : null}
+            </p>
           </div>
         ))}
       </div>
