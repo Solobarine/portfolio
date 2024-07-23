@@ -67,6 +67,7 @@ const Project = ({ data }: { data: ProjectProps }) => {
                   ? "scale-100 absolute z-20"
                   : "scale-0 absolute z-0"
               } w-full aspect-video transition-all duration-500 ease-in object-cover`}
+              loading="lazy"
             />
           ))}
           <i

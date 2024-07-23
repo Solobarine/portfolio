@@ -1,7 +1,7 @@
 export const sun = {
   name: "Sun",
   size: 6,
-  map: "./planets/sunmap.jpg",
+  map: "./planets/sunmap.avif",
   position: [0, 0, 0],
   orbitRadius: 0,
 };
@@ -10,7 +10,7 @@ export const planets = [
   {
     name: "Mercury",
     size: 0.0766,
-    map: "./planets/mercury/mercurymap.jpg",
+    map: "./planets/mercury/mercurymap.avif",
     bump: "./planets/mercury/mercurybump.jpg",
     position: [0.1, 0, 0],
     orbitRadius: 3.34,
@@ -19,8 +19,8 @@ export const planets = [
   {
     name: "Venus",
     size: 0.1898,
-    map: "./planets/venus/venusmap.jpg",
-    bump: "./planets/venus/venusbump.jpg",
+    map: "./planets/venus/venusmap.avif",
+    bump: "./planets/venus/venusbump.avif",
     position: [0.2, 0, 0.1],
     orbitRadius: 3.5,
     speedFactor: 0.75,
@@ -28,7 +28,7 @@ export const planets = [
   {
     name: "Earth",
     size: 0.2,
-    map: "./planets/earth/earthmap.jpg",
+    map: "./planets/earth/earthmap.avif",
     bump: "./planets/earth/earthbump.jpg",
     position: [0.4, 0, 0],
     orbitRadius: 4.1,
@@ -37,8 +37,8 @@ export const planets = [
   {
     name: "Mars",
     size: 0.1898,
-    map: "./planets/mars/marsmap.jpg",
-    bump: "./planets/mars/marsbump.jpg",
+    map: "./planets/mars/marsmap.avif",
+    bump: "./planets/mars/marsbump.avif",
     position: [0.56, 0, 0.3],
     orbitRadius: 4.5,
     speedFactor: 0.53,
@@ -46,7 +46,7 @@ export const planets = [
   {
     name: "Jupiter",
     size: 1.242,
-    map: "./planets/jupitermap.jpg",
+    map: "./planets/jupitermap.avif",
     bump: null,
     position: [0.8, 0, -0.3],
     orbitRadius: 6.5,

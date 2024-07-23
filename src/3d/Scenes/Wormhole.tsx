@@ -7,7 +7,7 @@ import { boxArray } from "../../Data/Planets";
 import Box from "./Box";
 
 const WormHoleMesh = () => {
-  const tubeRef = useRef<any>();
+  const tubeRef = useRef<null | THREE.Mesh>(null);
   const tubeGeometry = new THREE.TubeGeometry(spline, 200, 2, 50, false);
   const edge = new THREE.EdgesGeometry(tubeGeometry, 0.1);
   const lineMaterial = new THREE.LineBasicMaterial({ color: 0x22ffff });

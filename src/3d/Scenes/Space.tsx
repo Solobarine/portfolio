@@ -1,19 +1,20 @@
+import { useState } from "react";
 import Stars from "./Stars";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload } from "@react-three/drei";
+import { Preload } from "@react-three/drei";
 import { planets } from "../../Data/Planets";
 import Planet from "./Planet";
 import Sun from "./Sun";
-import Invite from "../../Components/Invite";
 
 const Space = () => {
+  const [size] = useState({ w: innerWidth, h: innerHeight });
+
   return (
     <div style={{ position: "relative", display: "flex" }}>
       <Canvas
-        style={{ background: "#001f00", height: "100vh" }}
-        camera={{ position: [0, 0, innerWidth < 600 ? -15 : -7] }}
+        style={{ background: "#001f", height: size.h }}
+        camera={{ position: [0, 0, size.w < 600 ? 10 : 5] }}
       >
-        <OrbitControls />
         <Stars />
         <perspectiveCamera
           fov={120}
@@ -30,7 +31,7 @@ const Space = () => {
               size={size}
               map={map}
               orbitRadius={orbitRadius}
-              position={position as any}
+              position={position as [x: number, y: number, z: number]}
               speedFactor={speedFactor}
               handleClick={() => console.log(name)}
             />
@@ -38,7 +39,6 @@ const Space = () => {
         )}
         <Preload all />
       </Canvas>
-      <Invite />
     </div>
   );
 };

@@ -15,7 +15,7 @@ interface SchoolProps {
 }
 
 const Icon = ({ logo, institution }: { logo: string; institution: string }) => {
-  return <img src={logo} alt={institution} />;
+  return <img src={logo} alt={institution} loading="lazy" />;
 };
 
 const School = ({ data }: { data: SchoolProps }) => {
@@ -31,11 +31,13 @@ const School = ({ data }: { data: SchoolProps }) => {
 
   return (
     <VerticalTimelineElement
-      ref={ref}
       date={`${data.dateStarted} - ${data.dateEnded}`}
       icon={<Icon logo={data.logo} institution={data.institution} />}
     >
-      <div className="p-2 rounded-lg px-3 py-6 grow transition-all duration-500 ease-in">
+      <div
+        ref={ref}
+        className="p-2 rounded-lg px-3 py-6 grow transition-all duration-500 ease-in"
+      >
         <h2 className="text-lg font-semibold">{data.institution}</h2>
         <h6 className="font-semibold">{data.location}</h6>
         <div className="flex items-center justify-between text-sm py-1">

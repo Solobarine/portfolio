@@ -41,7 +41,7 @@ const curvePath = [
 ];
 
 // construct tunnel track
-const points: any = [];
+const points = [];
 const len = curvePath.length;
 for (let p = 0; p < len; p += 3) {
   points.push(

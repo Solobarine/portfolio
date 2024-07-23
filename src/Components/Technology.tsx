@@ -4,23 +4,23 @@ const Technology = ({
   imagePath = null,
   keyId,
 }: {
-  name: string
-  icon?: string
-  imagePath?: string | null
-  keyId: number
+  name: string;
+  icon?: string;
+  imagePath?: string | null;
+  keyId: number;
 }) => {
   return (
     <div
-      className='technology relative transition-all duration-500 ease-in'
+      className="technology relative transition-all duration-500 ease-in"
       key={keyId}
     >
       {icon ? <i className={` ${icon} text-4xl`}></i> : null}
       {imagePath && !icon ? (
-        <img src={imagePath} alt={name} className='h-10' />
+        <img src={imagePath} alt={name} className="h-10" loading="lazy" />
       ) : null}
-      <p className='techName'>{name}</p>
+      <p className="techName">{name}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Technology
+export default Technology;

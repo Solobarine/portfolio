@@ -7,7 +7,6 @@ import About from "./Pages/About";
 import Education from "./Pages/Education";
 import Skills from "./Components/Skills";
 import "react-vertical-timeline-component/style.min.css";
-import Space from "./3d/Scenes/Space";
 import Contact from "./Pages/Contact";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <NavBar />
       <Hero />
       <Works />
-      <Space />
       <Skills />
       <About />
       <Experience />

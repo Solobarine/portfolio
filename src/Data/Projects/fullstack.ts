@@ -16,7 +16,7 @@ const fullstack = [
       "Followers",
     ],
     images: [
-      "/projects/vibely/vibely-landing.png",
+      "/projects/vibely/vibely-landing.avif",
       "/projects/vibely/vibely-create.png",
       "/projects/vibely/vibely-message.png",
       "/projects/vibely/vibely-profile.png",
@@ -94,10 +94,10 @@ const fullstack = [
       "Favourites",
     ],
     images: [
-      "/projects/sonrisa/sonrisa-landing.png",
-      "/projects/sonrisa/gran_sonrisa1.png",
-      "/projects/sonrisa/gran_sonrisa2.png",
-      "/projects/sonrisa/sonrisa-car.png",
+      "/projects/sonrisa/sonrisa-landing.avif",
+      "/projects/sonrisa/gran_sonrisa1.avif",
+      "/projects/sonrisa/gran_sonrisa2.avif",
+      "/projects/sonrisa/sonrisa-car.avif",
     ],
     languages: [
       {
@@ -168,9 +168,9 @@ const fullstack = [
       "Reviews",
     ],
     images: [
-      "/projects/sollyverse/sollyverse.png",
-      "/projects/sollyverse/sollyverse-login.png",
-      "/projects/sollyverse/sollyverse-register.png",
+      "/projects/sollyverse/sollyverse.avif",
+      "/projects/sollyverse/sollyverse-login.avif",
+      "/projects/sollyverse/sollyverse-register.avif",
     ],
     languages: [
       {
@@ -222,7 +222,7 @@ const fullstack = [
       "Transaction History",
     ],
     images: [
-      "/projects/continental/continental_landing.png",
+      "/projects/continental/continental_landing.avif",
       "/projects/continental/continental.png",
     ],
     languages: [
@@ -315,9 +315,9 @@ const fullstack = [
       "An Application for Viewing Information About Favourite Series",
     features: ["User Authentication", "JWT", "Use of TBMD", "Categories"],
     images: [
-      "/projects/nova/nova1.png",
-      "/projects/nova/nova-2.png",
-      "/projects/nova/nova3.png",
+      "/projects/nova/nova1.avif",
+      "/projects/nova/nova-2.avif",
+      "/projects/nova/nova3.avif",
     ],
     languages: [
       {
