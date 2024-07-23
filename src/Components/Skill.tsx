@@ -12,7 +12,7 @@ const Skill = ({
       {icon ? (
         <i className={`${icon} text-2xl`}></i>
       ) : (
-        <img src={image} alt={name} className="h-8" />
+        <img src={image} alt={name} className="h-8" loading="lazy" />
       )}
       <p className="text-sm font-semibold">{name}</p>
     </div>

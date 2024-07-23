@@ -5,7 +5,7 @@ import * as THREE from "three";
 const Sun = () => {
   const ref = useRef<null | THREE.Mesh>(null);
   const geometry = new THREE.IcosahedronGeometry(2.242, 4);
-  const texture = useLoader(THREE.TextureLoader, "./planets/sunmap.jpg");
+  const texture = useLoader(THREE.TextureLoader, "./planets/sunmap.avif");
 
   const lightRef = useRef<null | THREE.PointLight>(null);
 

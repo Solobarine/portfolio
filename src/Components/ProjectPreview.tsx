@@ -19,7 +19,12 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
   }>({ isHovered: false, index: null });
   return (
     <div className="p-3 border-lg w-full max-w-[25em] shadow-lg shadow-slate-300 rounded-md">
-      <img src={data.images[0]} alt="" className="w-full aspect-video" />
+      <img
+        src={data.images[0]}
+        alt=""
+        className="w-full aspect-video"
+        loading="lazy"
+      />
       <h2 className="font-2xl font-semibold">{data.name}</h2>
       <p className="mt-2 text-sm">{data.description}</p>
       <div className="flex items-center gap-2 mt-2 flex-wrap">
@@ -33,7 +38,12 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
             {framework.icon ? (
               <i className={`${framework.icon} text-xl`}></i>
             ) : (
-              <img src={framework.image} alt={framework.name} className="h-6" />
+              <img
+                src={framework.image}
+                alt={framework.name}
+                className="h-6"
+                loading="lazy"
+              />
             )}
             <p
               className={`text-sm font-semibold transition duration-500 ${

@@ -15,7 +15,7 @@ interface SchoolProps {
 }
 
 const Icon = ({ logo, institution }: { logo: string; institution: string }) => {
-  return <img src={logo} alt={institution} />;
+  return <img src={logo} alt={institution} loading="lazy" />;
 };
 
 const School = ({ data }: { data: SchoolProps }) => {

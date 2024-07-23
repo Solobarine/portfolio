@@ -16,7 +16,9 @@ interface ExperienceProps {
 }
 
 const Icon = ({ logo, company }: { logo: string; company: string }) => {
-  return <img src={logo} alt={company} className="object-cover" />;
+  return (
+    <img src={logo} alt={company} className="object-cover" loading="lazy" />
+  );
 };
 
 const Position = ({ data }: { data: ExperienceProps }) => {
