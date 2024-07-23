@@ -14,7 +14,7 @@ const Box = ({
   numberOfBoxes: number;
 }) => {
   const geometry = new THREE.BoxGeometry(0.075, 0.075, 0.075);
-  const ref = useRef<any>(null);
+  const ref = useRef<null | THREE.Mesh>(null);
   const texture = useLoader(THREE.TextureLoader, logoUrl);
   const material = new THREE.MeshBasicMaterial({
     color: 0xffffff,
@@ -23,8 +23,6 @@ const Box = ({
 
   const point = ((index / numberOfBoxes) * Math.random() + 0.3) % 1;
   const position = tube.parameters.path.getPointAt(point);
-  //position.x += Math.random() - 0.4;
-  //position.z += Math.random() - 0.4;
 
   if (ref.current) {
     ref.current.position.copy(position);

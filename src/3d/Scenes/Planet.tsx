@@ -20,20 +20,17 @@ const Planet = ({
 }) => {
   const [angle, setAngle] = useState(0);
 
-  const ref = useRef<any>(null);
+  const ref = useRef<null | THREE.Mesh>(null);
   const geometry = new THREE.IcosahedronGeometry(size, 4);
   const texture = useLoader(THREE.TextureLoader, map);
 
-  if (ref.current) {
-    //ref.current?.rotateY(23.4);
-  }
   useFrame((_, delta) => {
     setAngle((prev) => prev + delta * speedFactor);
-
+    const planet = ref.current as THREE.Mesh;
     const x = orbitRadius * Math.cos(angle);
     const z = orbitRadius * Math.sin(angle);
-    ref.current.rotation.y += 0.004;
-    ref.current?.position.set(x, 0, z);
+    planet.rotation.y += 0.004;
+    planet.position.set(x, 0, z);
   });
   return (
     <mesh

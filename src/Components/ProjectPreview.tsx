@@ -28,7 +28,7 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
             key={index}
             onMouseEnter={() => setName({ isHovered: true, index })}
             onMouseLeave={() => setName({ isHovered: false, index: null })}
-            className="flex items-center w-fit flex-wrap px-4 py-2 rounded-xl border-2 border-emerald-300 shadow-lg bg-gray-200 cursor-pointer transition duration-500"
+            className="flex items-center w-fit flex-wrap px-4 py-2 rounded-xl border-2 border-sky-300 shadow-lg bg-gray-200 cursor-pointer transition duration-500"
           >
             {framework.icon ? (
               <i className={`${framework.icon} text-xl`}></i>

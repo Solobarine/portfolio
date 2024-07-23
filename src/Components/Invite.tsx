@@ -11,7 +11,7 @@ const opacityVariant = {
 };
 
 const Invite = () => {
-  const ref = useRef<any>(null);
+  const ref = useRef<null | HTMLDivElement>(null);
   const inView = useInView(ref, { amount: 1, once: false });
   return (
     <motion.div

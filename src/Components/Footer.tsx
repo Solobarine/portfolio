@@ -3,7 +3,7 @@ import Socials from "./Socials";
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="p-2 py-12 sm:px-20 bg-emerald-300">
+    <footer className="p-2 py-12 sm:px-20 bg-sky-800 text-white">
       <div className="mb-10">
         <p className="text-4xl font-semibold text-justify">Solomon Akpuru</p>
         <Socials customStyles="text-xl my-10" />

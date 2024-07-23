@@ -32,7 +32,6 @@ const Position = ({ data }: { data: ExperienceProps }) => {
 
   return (
     <VerticalTimelineElement
-      ref={ref}
       date={`${data.dateStarted} - ${data.dateEnded}`}
       icon={<Icon logo={data.logo} company={data.company} />}
       iconStyle={{
@@ -42,7 +41,10 @@ const Position = ({ data }: { data: ExperienceProps }) => {
         placeItems: "center",
       }}
     >
-      <div className="rounded-lg transition-all p-2 duration-500 ease-in grow">
+      <div
+        ref={ref}
+        className="rounded-lg transition-all p-2 duration-500 ease-in grow"
+      >
         <a
           href={data.website}
           target="_blank"

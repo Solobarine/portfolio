@@ -1,16 +1,14 @@
-import { useFrame, useLoader } from "@react-three/fiber";
+import { useLoader } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 const Sun = () => {
-  const ref = useRef<any>(null);
+  const ref = useRef<null | THREE.Mesh>(null);
   const geometry = new THREE.IcosahedronGeometry(2.242, 4);
   const texture = useLoader(THREE.TextureLoader, "./planets/sunmap.jpg");
 
-  const lightRef = useRef<any>();
-  useFrame(() => {
-    // ref.current.rotation.y += 0.004;
-  });
+  const lightRef = useRef<null | THREE.PointLight>(null);
+
   useEffect(() => {
     // Add a helper to visualize the light's position
     if (lightRef.current) {
