@@ -32,11 +32,6 @@ const Hero = () => {
           </a>
         </div>
         <Socials customStyles="z-20 hidden sm: text-xl sm:text-3xl sm:absolute sm:left-7 sm:top-0 sm:flex sm:flex-col sm:min-h-screen sm:justify-center gap-2 text-sky-400" />
-        <img
-          src="/logo.png"
-          alt=""
-          className="block absolute -z-10 top-[0%] w-full max-w-[40em] right-0"
-        />
         <div className="bg-gray-200 absolute -z-20 inset-0"></div>
       </div>
     </div>

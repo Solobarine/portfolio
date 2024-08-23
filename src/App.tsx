@@ -11,7 +11,7 @@ import Contact from "./Pages/Contact";
 
 function App() {
   return (
-    <div className="app grid min-h-screen relative">
+    <div className="app grid min-h-screen relative font-itim">
       <NavBar />
       <Hero />
       <Works />

@@ -25,7 +25,7 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         className="w-full aspect-video"
         loading="lazy"
       />
-      <h2 className="font-2xl font-semibold">{data.name}</h2>
+      <h2 className="text-3xl py-2 font-semibold">{data.name}</h2>
       <p className="mt-2 text-sm">{data.description}</p>
       <div className="flex items-center gap-2 mt-2 flex-wrap">
         {data.frameworksAndTools.map((framework, index) => (

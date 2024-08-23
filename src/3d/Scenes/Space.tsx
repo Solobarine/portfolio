@@ -12,7 +12,7 @@ const Space = () => {
   return (
     <div style={{ position: "relative", display: "flex" }}>
       <Canvas
-        style={{ background: "#001f", height: size.h }}
+        style={{ background: "#001f", height: "100vh", width: "100%" }}
         camera={{ position: [0, 0, size.w < 600 ? 10 : 5] }}
       >
         <Stars />

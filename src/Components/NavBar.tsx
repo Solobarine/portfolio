@@ -25,7 +25,7 @@ const NavBar = () => {
       }`}
     >
       <div className="flex items-center gap-2">
-        <img src="/logo.avif" alt="My Logo" className="w-16" loading="lazy" />
+        <img src="/logo.avif" alt="My Logo" className="w-10" loading="lazy" />
       </div>
       <div
         className={`flex flex-col fixed font-semibold bg-gray-600 z-50 p-2 top-0 right-0 transition-all duration-500 ease-in h-screen bottom-0 w-56 lg:flex-row gap-4 ${

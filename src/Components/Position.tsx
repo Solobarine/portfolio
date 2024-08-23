@@ -50,12 +50,14 @@ const Position = ({ data }: { data: ExperienceProps }) => {
         <a
           href={data.website}
           target="_blank"
-          className="text-base font-semibold"
+          className="text-2xl font-semibold hover:underline transition-colors duration-500 hover:text-blue-500"
         >
           {data.company}
         </a>
-        <h4 className="text-base pt-1 font-semibold">{data.location}</h4>
-        <h5 className="font-bold pb-1 m-0">{data.jobTitle}</h5>
+        <h4 className="text-base pt-1 font-semibold text-gray-500">
+          {data.location}
+        </h4>
+        <h5 className="font-bold text-xl pb-1 m-0">{data.jobTitle}</h5>
         <ul className="list-disc list-inside grid gap-2 text-sm mt-5">
           {data.highlights.map((highlight) => (
             <li key={highlight} className="text-justify">

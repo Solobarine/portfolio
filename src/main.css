@@ -1,4 +1,4 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@200;300;400;500;600&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,400;0,800;1,400;1,800&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap")*/
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -57,12 +57,4 @@ a.active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
   }
-}
-
-#wormhole {
-  @apply h-screen w-screen;
-}
-
-#explodingLine {
-  @apply w-screen h-screen bg-red-300;
 }
