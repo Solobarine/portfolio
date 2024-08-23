@@ -1,6 +1,68 @@
 const fullstack = [
   {
     id: 0,
+    name: "Bite Express",
+    description: "A Food Ordering Site connecting Food Lovers with Restaurants",
+    features: [
+      "User and Restaurant Authentication",
+      "User and Restaurant Authorization",
+      "Asset Upload and Storage",
+      "Meals Creation",
+      "Likes",
+      "Reviews and Ratings",
+    ],
+    images: [
+      "/projects/bite_express/landing.png",
+      "/projects/bite_express/settings.png",
+      "/projects/bite_express/dashboard.png",
+      "/projects/bite_express/restaurant.png",
+    ],
+    languages: [
+      {
+        name: "Ruby",
+        icon: "devicon-ruby-plain colored",
+      },
+      {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "Rails",
+        icon: "devicon-rails-plain colored",
+      },
+      {
+        name: "React",
+        icon: "devicon-react-original colored",
+      },
+      { name: "Redux", icon: "devicon-redux-plain colored" },
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+      {
+        name: "JWT",
+        image: "/technologies/jwt.png",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "#",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/solobarine/bite_express",
+      },
+    ],
+  },
+  {
+    id: 0,
     name: "Vibely",
     description: "A Social Media Application for Posts and Messaging.",
     features: [
