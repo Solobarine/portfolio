@@ -27,11 +27,22 @@ const Planet = ({
   useFrame((_, delta) => {
     setAngle((prev) => prev + delta * speedFactor);
     const planet = ref.current as THREE.Mesh;
+
     const x = orbitRadius * Math.cos(angle);
     const z = orbitRadius * Math.sin(angle);
-    planet.rotation.y += 0.004;
+
+    const rotationZ = Math.cos(angle);
+
+    planet.rotation.z = rotationZ;
+    planet.rotation.y += Math.sin(delta * 0.1);
     planet.position.set(x, 0, z);
+
+    if (angle >= 2 * Math.PI) {
+      setAngle(0);
+      planet.rotation.z = 0;
+    }
   });
+
   return (
     <mesh
       ref={ref}

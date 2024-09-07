@@ -34,7 +34,7 @@ const experience = [
     id: 2,
     company: "Sollyverse",
     website: "https://sollyverse.vercel.app",
-    logo: "/workplace/sollyverse.png",
+    logo: "/workplace/sollyverse.jpeg",
     dateStarted: "January 2023",
     dateEnded: "Present",
     jobTitle: "Full Stack Developer",
