@@ -3,20 +3,29 @@ import Socials from "./Socials";
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="p-2 py-12 sm:px-20 bg-sky-800 text-white">
-      <div className="mb-10">
-        <p className="text-4xl font-semibold text-justify">Solomon Akpuru</p>
-        <Socials customStyles="text-xl my-10" />
+    <footer className="py-12 sm:px-20 bg-sky-800 text-white">
+      <div className="mb-10 text-center">
+        <p className="text-4xl font-bold mb-6">Solomon Akpuru</p>
+        <Socials customStyles="text-2xl flex justify-center gap-6 my-6" />
       </div>
-      <hr />
-      <div className="flex mt-10 items-center gap-3 justify-between flex-wrap">
-        <p className="text-center font-semibold">
-          Copyright &copy; {date.getFullYear()} Solomon Akpuru. All Rights
-          Reserved
+      <hr className="border-gray-500" />
+      <div className="flex flex-col sm:flex-row mt-10 items-center justify-between gap-6 text-center sm:text-left">
+        <p className="text-lg font-semibold">
+          &copy; {date.getFullYear()} Solomon Akpuru. All Rights Reserved.
         </p>
-        <div className="flex items-center gap-4 text-nowrap font-semibold">
-          <p className="text-sm">Privacy Policy</p>
-          <p className="text-sm">Terms of Service</p>
+        <div className="flex gap-6 text-sm font-semibold">
+          <a
+            href="#privacy-policy"
+            className="hover:underline transition-all duration-300"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="#terms-of-service"
+            className="hover:underline transition-all duration-300"
+          >
+            Terms of Service
+          </a>
         </div>
       </div>
     </footer>

@@ -38,29 +38,39 @@ const Position = ({ data }: { data: ExperienceProps }) => {
       icon={<Icon logo={data.logo} company={data.company} />}
       iconStyle={{
         overflow: "hidden",
-        backgroundColor: data.color ? data.color : "#ccc",
+        backgroundColor: data.color ? data.color : "#0ea5e9",
         display: "grid",
         placeItems: "center",
       }}
+      contentStyle={{
+        background: "#ffffff",
+        color: "#333",
+        borderRadius: "10px",
+        boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)",
+        padding: "20px",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid #ffffff" }}
     >
       <div
         ref={ref}
-        className="rounded-lg transition-all p-2 duration-500 ease-in grow"
+        className="transition-all duration-500 ease-in-out transform hover:scale-105"
       >
         <a
           href={data.website}
           target="_blank"
-          className="text-2xl font-semibold hover:underline transition-colors duration-500 hover:text-blue-500"
+          className="text-2xl font-bold hover:underline hover:text-sky-500 transition-colors duration-500"
         >
           {data.company}
         </a>
-        <h4 className="text-base pt-1 font-semibold text-gray-500">
+        <h4 className="text-sm pt-1 font-semibold text-gray-500">
           {data.location}
         </h4>
-        <h5 className="font-bold text-xl pb-1 m-0">{data.jobTitle}</h5>
-        <ul className="list-disc list-inside grid gap-2 text-sm mt-5">
-          {data.highlights.map((highlight) => (
-            <li key={highlight} className="text-justify">
+        <h5 className="text-xl font-bold text-gray-700 mt-2">
+          {data.jobTitle}
+        </h5>
+        <ul className="list-disc list-inside space-y-2 text-sm mt-4 text-gray-600">
+          {data.highlights.map((highlight, index) => (
+            <li key={index} className="leading-relaxed">
               {highlight}
             </li>
           ))}
@@ -69,5 +79,4 @@ const Position = ({ data }: { data: ExperienceProps }) => {
     </VerticalTimelineElement>
   );
 };
-
 export default Position;
