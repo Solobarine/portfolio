@@ -12,9 +12,9 @@ const fullstack = [
       "Reviews and Ratings",
     ],
     images: [
-      "/projects/bite_express/landing.png",
-      "/projects/bite_express/settings.png",
-      "/projects/bite_express/dashboard.png",
+      "/projects/bite_express/landing.avif",
+      "/projects/bite_express/settings.avif",
+      "/projects/bite_express/dashboard.avif",
       "/projects/bite_express/restaurant.png",
     ],
     languages: [
