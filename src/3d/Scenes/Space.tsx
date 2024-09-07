@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Stars from "./Stars";
 import { Canvas } from "@react-three/fiber";
 import { Preload } from "@react-three/drei";
@@ -7,13 +6,11 @@ import Planet from "./Planet";
 import Sun from "./Sun";
 
 const Space = () => {
-  const [size] = useState({ w: innerWidth, h: innerHeight });
-
   return (
     <div style={{ position: "relative", display: "flex" }}>
       <Canvas
         style={{ background: "#001f", height: "100vh", width: "100%" }}
-        camera={{ position: [0, 0, size.w < 600 ? 10 : 5] }}
+        camera={{ position: [0, 0, 5] }}
       >
         <Stars />
         <perspectiveCamera
