@@ -48,7 +48,7 @@ const Hero = () => {
             </motion.small>
           </div>
           <motion.a
-            href="/downloadables/solly_resume.pdf"
+            href="/downloadables/solomon_akpuru_resume.pdf"
             download
             className="bg-sky-500 text-white font-semibold block w-fit px-4 py-3 rounded-lg mt-6"
             initial={{ opacity: 0, y: 50 }}
