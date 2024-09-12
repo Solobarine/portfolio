@@ -60,7 +60,9 @@ const Project = ({ data }: { data: ProjectProps }) => {
           {data.images.map((image, index) => (
             <img
               src={image}
-              alt={`image content-${image}`}
+              alt={`Image No.${index + 1} ${image} showing the UI of ${
+                data.name
+              }`}
               key={index}
               className={`${
                 index === imageIndex
