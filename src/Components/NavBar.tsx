@@ -20,12 +20,17 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed top-0 z-40 flex items-center justify-between p-1 rounded-b-2xl w-full backdrop-blur-md text-white ${
-        onHero ? "bg-black/20" : "bg-black/40"
+      className={`fixed top-0 z-40 flex items-center justify-between p-1 w-full backdrop-blur-md text-white ${
+        onHero ? "bg-black/10" : "bg-black/20"
       }`}
     >
       <div className="flex items-center gap-2">
-        <img src="/logo.avif" alt="My Logo" className="w-10" loading="lazy" />
+        <img
+          src="/logo.avif"
+          alt="My Professional Logo"
+          className="w-10"
+          loading="lazy"
+        />
       </div>
       <div
         className={`flex flex-col fixed font-semibold bg-gray-600 z-50 p-2 top-0 right-0 transition-all duration-500 ease-in h-screen bottom-0 w-56 lg:flex-row gap-4 ${
@@ -33,13 +38,17 @@ const NavBar = () => {
         } lg:static lg:h-auto lg:w-auto lg:bg-transparent`}
         onBlur={toggle}
       >
-        <i
-          className={`fa-solid block transition-all duration-500 ease-in cursor-pointer ${
-            isOpen ? "fa-square-xmark" : "fa-bars fixed right-2"
-          } ml-auto text-2xl mt-3 lg:fixed lg:right-[-100%] lg:hidden`}
+        <button
           onClick={toggle}
           onBlur={toggle}
-        ></i>
+          className="ml-auto lg:fixed lg:right-[-100%] lg:hidden"
+        >
+          <i
+            className={`fa-solid block transition-all duration-500 ease-in cursor-pointer ${
+              isOpen ? "fa-square-xmark" : "fa-bars fixed right-2"
+            } text-2xl ${onHero || isOpen ? "text-white" : "text-blue-600"}`}
+          />
+        </button>
         <a
           href="#hero"
           className={`p-2 flex items-center lg:mt-0 gap-2 text-md $ hover:text-sky-400 ${
