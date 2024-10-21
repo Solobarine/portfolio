@@ -37,7 +37,7 @@ const experience = [
     logo: "/workplace/sollyverse.jpeg",
     dateStarted: "January 2023",
     dateEnded: "Present",
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Founder",
     location: "Port Harcourt, Nigeria",
     highlights: [
       "Optimized file storage and retrieval systems for a travel site, resulting in a 21% improvement in loading times and enhanced user experience.",
