@@ -1,6 +1,174 @@
 const fullstack = [
   {
     id: 0,
+    name: "Toucan",
+    description: "A Realtime Posts and Messaging Platform",
+    features: [
+      "User Authentication",
+      "User Authorization",
+      "Websockets for Posts",
+      "Comments and Replies",
+    ],
+    images: ["/projects/toucan/toucan_hero.png"],
+    languages: [
+      {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain colored",
+      },
+      {
+        name: "Elixir",
+        icon: "devicon-elixir-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "React",
+        icon: "devicon-react-original colored",
+      },
+      { name: "Redux", icon: "devicon-redux-plain colored" },
+      {
+        name: "Phoenix",
+        icon: "devicon-phoenix-plain-wordmark colored",
+      },
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+      {
+        name: "JWT",
+        image: "/technologies/jwt.png",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "#",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/solobarine/toucan",
+      },
+    ],
+    in_progress: true,
+  },
+  {
+    id: 1,
+    name: "Raven",
+    description: "A Patient and Appointment Management Platform for Hospitals",
+    features: [
+      "User Authentication",
+      "User Authorization",
+      "Patients Data Management",
+      "Appointments Management",
+    ],
+    images: ["/projects/raven/raven_landing.png"],
+    languages: [
+      {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain colored",
+      },
+      {
+        name: "PHP",
+        icon: "devicon-php-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "React",
+        icon: "devicon-react-original colored",
+      },
+      { name: "Redux", icon: "devicon-redux-plain colored" },
+      {
+        name: "Laravel",
+        icon: "devicon-laravel-plain colored",
+      },
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+      {
+        name: "JWT",
+        image: "/technologies/jwt.png",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "#",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/solobarine/raven",
+      },
+    ],
+    in_progress: true,
+  },
+  {
+    id: 2,
+    name: "Grabbit",
+    description: "An E-Commerce Application",
+    features: [
+      "User Authentication",
+      "User Authorization",
+      "Patients Data Management",
+      "Appointments Management",
+    ],
+    images: ["/projects/grabbit/grabbit_landing.png"],
+    languages: [
+      {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain colored",
+      },
+      {
+        name: "PHP",
+        icon: "devicon-php-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "React",
+        icon: "devicon-react-original colored",
+      },
+      { name: "Redux", icon: "devicon-redux-plain colored" },
+      {
+        name: "Laravel",
+        icon: "devicon-laravel-plain colored",
+      },
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+      {
+        name: "JWT",
+        image: "/technologies/jwt.png",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "#",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/solobarine/grabbit",
+      },
+    ],
+    in_progress: true,
+  },
+  {
+    id: 3,
     name: "Bite Express",
     description: "A Food Ordering Site connecting Food Lovers with Restaurants",
     features: [
@@ -60,9 +228,10 @@ const fullstack = [
         link: "https://github.com/solobarine/bite_express",
       },
     ],
+    in_progress: false,
   },
   {
-    id: 0,
+    id: 4,
     name: "Vibely",
     description: "A Social Media Application for Posts and Messaging.",
     features: [
@@ -141,9 +310,10 @@ const fullstack = [
         link: "https://github.com/solobarine/vibely",
       },
     ],
+    in_progress: false,
   },
   {
-    id: 1,
+    id: 5,
     name: "Gran Sonrisa",
     description: "A Car Dealership App for Purchasing Cars",
     features: [
@@ -215,9 +385,54 @@ const fullstack = [
         link: "https://github.com/Solobarine/gran_sonrisa",
       },
     ],
+    in_progress: false,
   },
   {
     id: 2,
+    name: "RoadMaster",
+    description: "An Inventory Management Application for Car Dealerships",
+    features: [
+      "User Authentication",
+      "User Authorization",
+      "Car Inventory Management",
+      "Test Drives Co-Ordination",
+      "Reviews and Ratings",
+    ],
+    images: ["/projects/roadmaster/roadmaster_api.png"],
+    languages: [
+      {
+        name: "Ruby",
+        icon: "devicon-ruby-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "Rails",
+        icon: "devicon-rails-plain colored",
+      },
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "JWT",
+        image: "/technologies/jwt.png",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "#",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/solobarine/roadmaster",
+      },
+    ],
+    in_progress: true,
+  },
+  {
+    id: 6,
     name: "Sollyverse",
     description: "A Travel Reservations Application",
     features: [
@@ -272,9 +487,10 @@ const fullstack = [
         link: "https://github.com/Solobarine/sollyverse-travels",
       },
     ],
+    in_progress: false,
   },
   {
-    id: 3,
+    id: 7,
     name: "Continental",
     description: "A Financial Application for Sending and Receiving Funds.",
     features: [
@@ -329,6 +545,7 @@ const fullstack = [
         link: "https://github.com/Solobarine/continental",
       },
     ],
+    in_progress: false,
   },
   //  {
   //    id: 4,
@@ -371,7 +588,7 @@ const fullstack = [
   //    ],
   //  },
   {
-    id: 5,
+    id: 8,
     name: "Nova",
     description:
       "An Application for Viewing Information About Favourite Series",
@@ -415,6 +632,7 @@ const fullstack = [
         link: "https://github.com/Solobarine/nova",
       },
     ],
+    in_progress: false,
   },
 ];
 
