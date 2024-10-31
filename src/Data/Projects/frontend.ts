@@ -41,6 +41,7 @@ const frontend = [
         link: "https://github.com/solobarine/my_nba",
       },
     ],
+    in_progress: false,
   },
 ];
 
