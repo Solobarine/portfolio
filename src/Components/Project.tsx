@@ -12,6 +12,7 @@ interface ProjectProps {
   languages: { name: string; icon?: string; image?: string }[];
   frameworksAndTools: { name: string; icon?: string; image?: string }[];
   links: { name: string; link: string }[];
+  in_progress: boolean;
 }
 
 const Project = ({ data }: { data: ProjectProps }) => {
@@ -99,7 +100,9 @@ const Project = ({ data }: { data: ProjectProps }) => {
         </div>
       </div>
       <div className="projectDetails grow px-2 pt-4">
-        <h3 className="text-xl font-bold pb-2">{data.name}</h3>
+        <h3 className="text-xl font-bold pb-2">
+          {data.name} {data.in_progress && <span>In Progress</span>}
+        </h3>
         <p>{data.description}</p>
         <div>
           <div>

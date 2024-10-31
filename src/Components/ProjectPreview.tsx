@@ -10,6 +10,7 @@ interface ProjectProps {
   languages: { name: string; icon?: string; image?: string }[];
   frameworksAndTools: { name: string; icon?: string; image?: string }[];
   links: { name: string; link: string }[];
+  in_progress: boolean;
 }
 
 const ProjectPreview = ({ data }: { data: ProjectProps }) => {
@@ -25,6 +26,11 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         className="w-full aspect-video"
         loading="lazy"
       />
+      {data.in_progress && (
+        <span className="text-white bg-sky-500 px-4 py-1 rounded-full mt-2 block w-fit ml-auto">
+          In Progress
+        </span>
+      )}
       <h2 className="text-3xl py-2 font-semibold">{data.name}</h2>
       <p className="mt-2 text-sm">{data.description}</p>
       <div className="flex items-center gap-2 mt-2 flex-wrap">
