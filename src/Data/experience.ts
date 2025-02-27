@@ -33,11 +33,11 @@ const experience = [
   {
     id: 2,
     company: "Sollyverse",
-    website: "https://sollyverse.vercel.app",
+    website: "#",
     logo: "/workplace/sollyverse.jpeg",
     dateStarted: "January 2023",
     dateEnded: "Present",
-    jobTitle: "Founder",
+    jobTitle: "Software Engineer (Freelance)",
     location: "Port Harcourt, Nigeria",
     highlights: [
       "Optimized file storage and retrieval systems for a travel site, resulting in a 21% improvement in loading times and enhanced user experience.",
@@ -52,7 +52,7 @@ const experience = [
     logo: "/workplace/nog.jpg",
     dateStarted: "May 2021",
     dateEnded: "August 2021",
-    jobTitle: "Gas Engineering Intern",
+    jobTitle: "Intern",
     location: "Benin City, Nigeria",
     color: "#fff",
     highlights: [
