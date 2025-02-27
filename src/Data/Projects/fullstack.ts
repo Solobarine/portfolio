@@ -46,7 +46,7 @@ const fullstack = [
     links: [
       {
         name: "See Demo",
-        link: "#",
+        link: "https://toucan-ten.vercel.app",
       },
       {
         name: "See Code",
@@ -55,7 +55,7 @@ const fullstack = [
     ],
     in_progress: true,
   },
-  {
+  /**  {
     id: 1,
     name: "Raven",
     description: "A Patient and Appointment Management Platform for Hospitals",
@@ -167,7 +167,7 @@ const fullstack = [
     ],
     in_progress: true,
   },
-  {
+  **/ {
     id: 3,
     name: "Bite Express",
     description: "A Food Ordering Site connecting Food Lovers with Restaurants",
