@@ -1,7 +1,6 @@
 import languages from "../Data/languages";
 import frontend from "../Data/frontend";
 import backend from "../Data/backend";
-import testLibrariesAndOthers from "../Data/testLibrariesAndOthers";
 import Skill from "./Skill";
 
 const Skills = () => {
@@ -13,7 +12,7 @@ const Skills = () => {
       >
         My Skills
       </h1>
-      <div className="p-2 flex items-center flex-wrap justify-center gap-16 sm:px-32">
+      <div className="p-2 flex items-center flex-wrap justify-center gap-16 sm:px-10">
         <div className="p-3 border rounded-lg border-sky-500 bg-gray-100 shadow-lg shadow-slate-400 w-full grow sm:max-w-[20em]">
           <h2 className="text-lg pb-2 font-semibold">Languages</h2>
           <hr className="border-sky-500" />
@@ -49,19 +48,6 @@ const Skills = () => {
           <hr className="border-sky-500" />
           <div className="skills">
             {backend.map((tech) => (
-              <Skill
-                key={tech.id}
-                icon={tech.icon as string}
-                name={tech.name}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="p-3 border rounded-lg border-sky-500 bg-gray-100 shadow-lg shadow-slate-400 grow w-full min-w-[12em] sm:max-w-[20em]">
-          <h2 className="text-lg pb-2 font-semibold">Testing and Others</h2>
-          <hr className="border-sky-500" />
-          <div className="skills">
-            {testLibrariesAndOthers.map((tech) => (
               <Skill
                 key={tech.id}
                 icon={tech.icon as string}

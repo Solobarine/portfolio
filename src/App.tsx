@@ -14,9 +14,9 @@ function App() {
     <div className="app grid min-h-screen relative font-itim">
       <NavBar />
       <Hero />
-      <Works />
-      <Skills />
       <About />
+      <Skills />
+      <Works />
       <Experience />
       <Education />
       <Contact />

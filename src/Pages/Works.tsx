@@ -1,5 +1,4 @@
 import fullstack from "../Data/Projects/fullstack";
-import frontend from "../Data/Projects/frontend";
 import ProjectPreview from "../Components/ProjectPreview";
 
 const Works = () => {
@@ -14,9 +13,6 @@ const Works = () => {
         </h2>
         <div className="flex items-center gap-10 justify-center flex-wrap pb-10">
           {fullstack.map((data, index) => (
-            <ProjectPreview key={index} data={data} />
-          ))}
-          {frontend.map((data, index) => (
             <ProjectPreview key={index} data={data} />
           ))}
         </div>
