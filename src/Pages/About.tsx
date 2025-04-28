@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="py-20 px-2 sm:px-10" id="about">
+    <div className="py-20 px-6 sm:px-20" id="about">
       <div className="max-w-lg w-full">
         <h1 className="text-3xl sm:text-5xl font-semibold mb-4">About Me</h1>
         <p>
@@ -13,7 +13,7 @@ const About = () => {
           improve my skills and broaden my perspectives.
         </p>
       </div>
-      <div className="max-w-lg w-full ml-auto">
+      <div className="max-w-lg w-full ml-auto mt-8">
         <h1 className="text-3xl sm:text-5xl font-semibold mb-4">What I Do</h1>
         <p>
           <b>🚀 Full-Stack Development:</b> I build robust, scalable
