@@ -6,12 +6,9 @@ const Hero = () => {
   return (
     <div className="relative">
       <Space />
-      <motion.div
+      <div
         className="py-10 px-2 sm:pl-32 h-full sm:min-h-screen w-full absolute top-0"
         id="hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
       >
         <motion.div
           className="z-10 sm:mt-0 h-full flex flex-col justify-between sm:block"
@@ -29,22 +26,16 @@ const Hero = () => {
               Hello, I'm <br />
               Solomon <span className="text-sky-500">Akpuru</span>
             </motion.h1>
-            <motion.h1
-              className="text-2xl sm:text-3xl font-bold text-white"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.9 }}
-            >
-              I build Full Stack Applications
-            </motion.h1>
             <motion.small
-              className="font-semibold text-gray-200 text-xl pt-4 hidden sm:block"
+              className="font-semibold text-gray-200 text-xl pt-4 hidden sm:block max-w-lg w-full"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1.1 }}
             >
-              I am a Software Developer adept in <br /> Creating Memorable
-              Digital Experiences.
+              I am a Software Engineer passionate about designing and developing
+              user centered web applications. My mission is to bring ideas to
+              life with apps that are scalable, reliable and stand out from the
+              competition.
             </motion.small>
           </div>
           <motion.a
@@ -65,7 +56,7 @@ const Hero = () => {
           animate={{ scaleX: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         />
-      </motion.div>{" "}
+      </div>
     </div>
   );
 };
