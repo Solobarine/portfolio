@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,73 +37,62 @@ const NavBar = () => {
       <div
         className={`flex flex-col fixed font-semibold bg-gray-600 z-50 p-2 top-0 right-0 transition-all duration-500 ease-in h-screen bottom-0 w-56 lg:flex-row gap-4 ${
           isOpen ? "right-0" : "right-[-100%]"
+        } ${
+          onHero ? "text-white" : "lg:text-neutral-600 lg:dark:text-white"
         } lg:static lg:h-auto lg:w-auto lg:bg-transparent`}
-        onBlur={toggle}
       >
-        <button
-          onClick={toggle}
-          onBlur={toggle}
-          className="ml-auto lg:fixed lg:right-[-100%] lg:hidden"
-        >
+        <button onClick={toggle} className="ml-auto lg:hidden">
           <i
             className={`fa-solid block transition-all duration-500 ease-in cursor-pointer ${
               isOpen ? "fa-square-xmark" : "fa-bars fixed right-2"
             } text-2xl ${onHero || isOpen ? "text-white" : "text-blue-600"}`}
           />
         </button>
-        <a
-          href="#hero"
-          className={`p-2 flex items-center lg:mt-0 gap-2 text-md $ hover:text-sky-400 ${
-            !isOpen ? "mt-10" : ""
-          }`}
-          onClick={toggle}
+        <NavLink
+          to="#hero"
+          className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
         >
           Home
-        </a>
-        <a
-          href="#skills"
+        </NavLink>
+        <NavLink
+          to="#skills"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
-          onClick={toggle}
         >
           Skills
-        </a>
+        </NavLink>
 
-        <a
-          href="#education"
+        <NavLink
+          to="#education"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
-          onClick={toggle}
         >
           Education
-        </a>
+        </NavLink>
 
-        <a
-          href="#experience"
+        <NavLink
+          to="#experience"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
-          onClick={toggle}
         >
           Experience
-        </a>
-        <a
-          href="#projects"
+        </NavLink>
+        <NavLink
+          to="#projects"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
-          onClick={toggle}
         >
           Projects
-        </a>
-        <a
-          href="#about"
+        </NavLink>
+        <NavLink
+          to="#about"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
-          onClick={toggle}
         >
           About Me
-        </a>
-        <a
-          href="#contact"
+        </NavLink>
+        <NavLink
+          to="#contact"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
-          onClick={toggle}
         >
           Contact Me
-        </a>
+        </NavLink>
+        <ThemeToggle />
       </div>
     </div>
   );

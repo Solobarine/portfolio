@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
 interface ProjectProps {
   id: number;
   name: string;
@@ -14,67 +11,64 @@ interface ProjectProps {
 }
 
 const ProjectPreview = ({ data }: { data: ProjectProps }) => {
-  const [name, setName] = useState<{
-    isHovered: boolean;
-    index: null | number;
-  }>({ isHovered: false, index: null });
   return (
-    <div className="p-3 border-lg w-full max-w-[25em] shadow-lg shadow-slate-300 rounded-md">
+    <div className="w-full max-w-md bg-white dark:bg-zinc-900 rounded-xl shadow-md overflow-hidden transition hover:shadow-xl p-4">
       <img
         src={data.images[0]}
-        alt=""
-        className="w-full aspect-video"
+        alt={`${data.name} preview`}
+        className="w-full h-48 object-cover rounded-md"
         loading="lazy"
       />
+
       {data.in_progress && (
-        <span className="text-white bg-sky-500 px-4 py-1 rounded-full mt-2 block w-fit ml-auto">
+        <span className="inline-block bg-sky-500 text-white text-xs font-semibold px-3 py-1 rounded-full mt-3 ml-auto">
           In Progress
         </span>
       )}
-      <h2 className="text-3xl py-2 font-semibold">{data.name}</h2>
-      <p className="mt-2 text-sm">{data.description}</p>
-      <div className="flex items-center gap-2 mt-2 flex-wrap">
-        {data.frameworksAndTools.map((framework, index) => (
+
+      <h2 className="text-2xl font-bold mt-4 text-zinc-800 dark:text-white">
+        {data.name}
+      </h2>
+      <p className="text-sm text-zinc-600 dark:text-zinc-300 mt-2">
+        {data.description}
+      </p>
+
+      <div className="flex flex-wrap gap-3 mt-4">
+        {data.frameworksAndTools.map((tool, index) => (
           <div
             key={index}
-            onMouseEnter={() => setName({ isHovered: true, index })}
-            onMouseLeave={() => setName({ isHovered: false, index: null })}
-            className="flex items-center w-fit flex-wrap px-4 py-2 rounded-xl border-2 border-sky-300 shadow-lg bg-gray-200 cursor-pointer transition duration-500"
+            className="group flex items-center bg-zinc-100 dark:bg-zinc-800 border border-sky-300 rounded-full px-3 py-2 shadow-sm hover:shadow-md transition"
           >
-            {framework.icon ? (
-              <i className={`${framework.icon} text-xl`}></i>
+            {tool.icon ? (
+              <i className={`${tool.icon} text-lg text-sky-600`}></i>
             ) : (
               <img
-                src={framework.image}
-                alt={framework.name}
-                className="h-6"
+                src={tool.image}
+                alt={tool.name}
+                className="h-5 w-5 object-contain"
                 loading="lazy"
               />
             )}
-            <p
-              className={`text-sm font-semibold transition duration-500 ${
-                name.isHovered && name.index === index
-                  ? "scale-100 ml-3"
-                  : "scale-0 ml-0"
-              }`}
-            >
-              {name.isHovered && name.index === index ? framework.name : null}
-            </p>
+            <span className="ml-2 text-sm font-medium text-zinc-700 dark:text-zinc-200">
+              {tool.name}
+            </span>
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-center gap-6 mt-2 py-1">
+
+      <div className="mt-4 flex gap-4">
         {data.links.map(
           (link, index) =>
             link.name === "See Code" && (
-              <Link
+              <a
                 key={index}
-                to={link.link}
+                href={link.link}
                 target="_blank"
-                className="text-sm font-bold text-blue-500"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-sky-600 hover:underline"
               >
                 {link.name}
-              </Link>
+              </a>
             )
         )}
       </div>

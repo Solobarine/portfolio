@@ -12,10 +12,6 @@ body {
   @apply text-slate-600;
 }
 
-a.active {
-  @apply text-gray-900;
-}
-
 .app {
   grid-template-rows: auto 1fr auto;
 }

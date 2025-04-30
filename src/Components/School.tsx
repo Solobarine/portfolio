@@ -30,6 +30,8 @@ const School = ({ data }: { data: SchoolProps }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
 
+  const theme = localStorage.getItem("theme") as "light" | "dark";
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -39,6 +41,7 @@ const School = ({ data }: { data: SchoolProps }) => {
   return (
     <VerticalTimelineElement
       date={`${data.dateStarted} - ${data.dateEnded}`}
+      dateClassName="dark:text-gray-100"
       icon={<Icon logo={data.logo} institution={data.institution} />}
       iconStyle={{
         backgroundColor: "#fff",
@@ -47,7 +50,7 @@ const School = ({ data }: { data: SchoolProps }) => {
         placeItems: "center",
       }}
       contentStyle={{
-        background: "#f9f9f9",
+        background: theme === "light" ? "#fff" : "#222",
         color: "#333",
         borderRadius: "10px",
         boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
@@ -59,15 +62,21 @@ const School = ({ data }: { data: SchoolProps }) => {
         ref={ref}
         className="transition-all duration-500 ease-in-out transform hover:scale-105"
       >
-        <h2 className="text-2xl font-bold text-gray-800">{data.institution}</h2>
-        <h6 className="text-sm font-medium text-gray-500 mt-1">
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+          {data.institution}
+        </h2>
+        <h6 className="text-sm font-medium text-gray-500 dark:text-gray-100 mt-1">
           {data.location}
         </h6>
         <div className="flex items-center justify-between flex-wrap text-sm py-4 border-b border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-700">{data.course}</h3>
-          <h4 className="text-base font-medium text-gray-600">{data.degree}</h4>
+          <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-100">
+            {data.course}
+          </h3>
+          <h4 className="text-base font-medium text-gray-600 dark:text-gray-100">
+            {data.degree}
+          </h4>
         </div>
-        <ul className="list-disc list-inside space-y-2 mt-4 text-gray-600 text-sm">
+        <ul className="list-disc list-inside space-y-2 mt-4 text-gray-600 dark:text-gray-100 text-sm">
           {data.highlights.map((highlight, index) => (
             <li key={index} className="leading-relaxed">
               {highlight}

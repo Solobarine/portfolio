@@ -27,7 +27,7 @@ const Hero = () => {
               Solomon <span className="text-sky-500">Akpuru</span>
             </motion.h1>
             <motion.small
-              className="font-semibold text-gray-200 text-xl pt-4 hidden sm:block max-w-lg w-full"
+              className="font-semibold text-gray-200 text-xl pt-4 block max-w-lg w-full"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1.1 }}
