@@ -26,6 +26,8 @@ const Position = ({ data }: { data: ExperienceProps }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
 
+  const theme = localStorage.getItem("theme") as "light" | "dark";
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -35,6 +37,7 @@ const Position = ({ data }: { data: ExperienceProps }) => {
   return (
     <VerticalTimelineElement
       date={`${data.dateStarted} - ${data.dateEnded}`}
+      dateClassName="dark:text-gray-100"
       icon={<Icon logo={data.logo} company={data.company} />}
       iconStyle={{
         overflow: "hidden",
@@ -43,7 +46,7 @@ const Position = ({ data }: { data: ExperienceProps }) => {
         placeItems: "center",
       }}
       contentStyle={{
-        background: "#ffffff",
+        background: theme === "light" ? "#fff" : "#444",
         color: "#333",
         borderRadius: "10px",
         boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)",
@@ -53,7 +56,7 @@ const Position = ({ data }: { data: ExperienceProps }) => {
     >
       <div
         ref={ref}
-        className="transition-all duration-500 ease-in-out transform hover:scale-105"
+        className="transition-all duration-500 ease-in-out transform hover:scale-105 dark:text-gray-100"
       >
         <a
           href={data.website}
@@ -62,13 +65,13 @@ const Position = ({ data }: { data: ExperienceProps }) => {
         >
           {data.company}
         </a>
-        <h4 className="text-sm pt-1 font-semibold text-gray-500">
+        <h4 className="text-sm pt-1 font-semibold text-gray-500 dark:text-gray-100">
           {data.location}
         </h4>
-        <h5 className="text-xl font-bold text-gray-700 mt-2">
+        <h5 className="text-xl font-bold text-gray-700 dark:text-gray-100 mt-2">
           {data.jobTitle}
         </h5>
-        <ul className="list-disc list-inside space-y-2 text-sm mt-4 text-gray-600">
+        <ul className="list-disc list-inside space-y-2 text-sm mt-4 text-gray-600 dark:text-gray-100">
           {data.highlights.map((highlight, index) => (
             <li key={index} className="leading-relaxed">
               {highlight}
