@@ -13,9 +13,9 @@ const Skills = () => {
         My Skills
       </h1>
       <div className="p-2 flex items-center flex-wrap justify-center gap-16 sm:px-10">
-        <div className="p-3 border rounded-lg border-sky-500 bg-gray-100 shadow-lg shadow-slate-400 w-full grow sm:max-w-[20em]">
+        <div className="p-3 rounded-lg shadow-md hover:shadow-lg dark:bg-neutral-800 w-full grow sm:max-w-[20em]">
           <h2 className="text-lg pb-2 font-semibold">Languages</h2>
-          <hr className="border-sky-500" />
+          <hr className="border-gray-400" />
           <div className="skills">
             {languages.map((language) => (
               <Skill
@@ -26,9 +26,9 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="p-3 border rounded-lg border-sky-500 bg-gray-100 shadow-lg shadow-slate-400 grow w-full sm:max-w-[20em]">
+        <div className="p-3 rounded-lg shadow-md hover:shadow-lg dark:bg-neutral-800 grow w-full sm:max-w-[20em]">
           <h2 className="text-lg pb-2 font-semibold">Frontend</h2>
-          <hr className="border-sky-500" />
+          <hr className="border-gray-400" />
           <div className="skills">
             {frontend.map((tech) =>
               tech.icon ? (
@@ -43,9 +43,9 @@ const Skills = () => {
             )}
           </div>
         </div>
-        <div className="p-3 border rounded-lg border-sky-500 bg-gray-100 shadow-lg shadow-slate-400 grow sm:max-w-[20em]">
+        <div className="p-3 rounded-lg shadow-md hover:shadow-lg dark:bg-neutral-800 grow w-full sm:max-w-[20em]">
           <h2 className="text-lg pb-2 font-semibold">Backend</h2>
-          <hr className="border-sky-500" />
+          <hr className="border-gray-400" />
           <div className="skills">
             {backend.map((tech) => (
               <Skill
