@@ -20,7 +20,12 @@ const CaseStudy = () => {
 
   return (
     <div className="min-h-screen pt-14">
-      <div className="relative h-96 w-full">
+      <div className="relative h-96 w-full overflow-y-hidden">
+        <img
+          src={caseStudy.imageURI}
+          alt="Case Study Image"
+          className="w-full h-full object-cover object-center"
+        />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
             <Link
