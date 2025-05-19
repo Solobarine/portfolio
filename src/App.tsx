@@ -1,27 +1,25 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import CaseStudies from "./Pages/CaseStudies";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
-import Works from "./Pages/Works";
-import Experience from "./Pages/Experience";
-import Hero from "./Pages/Hero";
-import About from "./Pages/About";
-import Education from "./Pages/Education";
-import Skills from "./Components/Skills";
-import "react-vertical-timeline-component/style.min.css";
-import Contact from "./Pages/Contact";
-import OpenSourceContributions from "./Pages/OpenSourceContributions";
+import CaseStudy from "./Pages/CaseStudy";
+import NotFound from "./Pages/NotFound";
+import ScrollToHash from "./hooks/scroll";
 
 function App() {
   return (
-    <div className="app grid min-h-screen relative font-itim text-gray-700 dark:text-gray-200 dark:bg-neutral-700">
+    <div className="app grid min-h-screen relative max-w-screen overflow-x-hidden font-itim text-gray-700 dark:text-gray-200 dark:bg-neutral-700">
       <NavBar />
-      <Hero />
-      <About />
-      <Skills />
-      <Works />
-      <OpenSourceContributions />
-      <Experience />
-      <Education />
-      <Contact />
+      <ScrollToHash />
+      <main className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/case-studies/:id" element={<CaseStudy />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
