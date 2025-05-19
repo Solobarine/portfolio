@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -24,7 +25,7 @@ const NavBar = () => {
     <div
       className={`fixed top-0 z-40 flex items-center justify-between p-1 w-full backdrop-blur-md text-white ${
         onHero ? "bg-black/10" : "bg-black/20"
-      }`}
+      } ${pathname !== "/" ? "bg-black/40" : ""}`}
     >
       <div className="flex items-center gap-2">
         <img
@@ -49,46 +50,60 @@ const NavBar = () => {
           />
         </button>
         <NavLink
-          to="#hero"
+          to="/#hero"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
+          onClick={toggle}
         >
           Home
         </NavLink>
         <NavLink
-          to="#skills"
+          to="/case-studies"
+          className="p-2 flex items-center gap-2 text-md hover:text-sky-400 text-nowrap"
+          onClick={toggle}
+        >
+          Case Studies
+        </NavLink>
+        <NavLink
+          to="/#skills"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
+          onClick={toggle}
         >
           Skills
         </NavLink>
 
         <NavLink
-          to="#education"
+          to="/#education"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
+          onClick={toggle}
         >
           Education
         </NavLink>
 
         <NavLink
-          to="#experience"
+          to="/#experience"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
+          onClick={toggle}
         >
           Experience
         </NavLink>
         <NavLink
-          to="#projects"
+          to="/#projects"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
+          onClick={toggle}
         >
           Projects
         </NavLink>
         <NavLink
-          to="#about"
+          to="/#about"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
+          onClick={toggle}
         >
           About Me
         </NavLink>
         <NavLink
-          to="#contact"
+          to="/#contact"
           className="p-2 flex items-center gap-2 text-md hover:text-sky-400"
+          onClick={toggle}
         >
           Contact Me
         </NavLink>
