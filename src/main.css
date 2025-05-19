@@ -47,6 +47,10 @@ body {
   @apply grid w-full grid-cols-1 sm:grid-cols-2;
 }
 
+.vertical-timeline-element-content {
+  @apply !bg-white dark:!bg-zinc-900;
+}
+
 @media screen and (min-width: 640px) {
   .education,
   .experience {
