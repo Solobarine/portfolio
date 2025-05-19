@@ -1,5 +1,6 @@
 type CaseStudies = {
   id: number;
+  imageURI: string;
   title: string;
   summary: string;
   challenge: string;
@@ -12,6 +13,7 @@ const caseStudies: CaseStudies[] = [
   {
     id: 0,
     title: "Crypto Exchange Application",
+    imageURI: "/crypto_exchange.avif",
     summary:
       "A Web Applications that enables Users Buy and Sell Cryptocurrencies with ease",
     challenge:
@@ -25,6 +27,7 @@ const caseStudies: CaseStudies[] = [
   {
     id: 1,
     title: "Rental Property Platform",
+    imageURI: "/rental_platform.avif",
     summary:
       "Building of a Property Rental Platform that led to a 23% decrease in property browsing.",
     challenge:
@@ -47,6 +50,7 @@ const caseStudies: CaseStudies[] = [
   {
     id: 2,
     title: "Personalized Meals Recommendations Algorithm",
+    imageURI: "/meals.jpg",
     summary:
       "A Recommendations Engine that delivers personalized meals suggestions.",
     challenge:
@@ -66,6 +70,7 @@ const caseStudies: CaseStudies[] = [
   {
     id: 3,
     title: "Art E-commerce Platform",
+    imageURI: "/art_ecommerce_platform.avif",
     summary:
       "Development of an E-Commerce Platform with Payment integration for Art Sales.",
     challenge:
