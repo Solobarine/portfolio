@@ -9,7 +9,7 @@ const Works = () => {
         id="projects"
       >
         <h2 className="text-3xl sm:text-5xl font-semibold text-center p-2 py-6 mb-6">
-          Best Works
+          Best Personal Projects
         </h2>
         <div className="flex items-center gap-10 justify-center flex-wrap pb-10">
           {fullstack.map((data, index) => (
