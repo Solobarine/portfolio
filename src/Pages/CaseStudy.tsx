@@ -5,7 +5,6 @@ import NotFound from "./NotFound";
 
 const CaseStudy = () => {
   const { id } = useParams();
-  console.log(id);
   const caseStudy = caseStudies.find((study) => study.id.toString() === id);
 
   if (!caseStudy) {
