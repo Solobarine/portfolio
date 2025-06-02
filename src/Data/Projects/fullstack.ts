@@ -256,6 +256,52 @@ const fullstack = [
     ],
     in_progress: false,
   },
+  {
+    id: 4,
+    name: "Flymate",
+    description: "A Travel Landing Page with 3D elements.",
+    features: ["3D scenes", "3D models", "Animatioons"],
+    images: [
+      "/projects/flymate/hero.png",
+      "/projects/flymate/destinations.png",
+      "/projects/flymate/call_to_action.png",
+    ],
+    languages: [
+      {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain colored",
+      },
+      {
+        name: "CSS",
+        icon: "devicon-css-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "NextJS",
+        icon: "devicon-nextjs-plain colored",
+      },
+      {
+        name: "ThreeJS",
+        icon: "devicon-threejs-original colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "https://flymate-omega.vercel.app/",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/Solobarine/flymate",
+      },
+    ],
+    in_progress: false,
+  },
 ];
 
 export default fullstack;

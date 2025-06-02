@@ -56,21 +56,18 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         ))}
       </div>
 
-      <div className="mt-4 flex gap-4">
-        {data.links.map(
-          (link, index) =>
-            link.name === "See Code" && (
-              <a
-                key={index}
-                href={link.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-semibold text-sky-600 hover:underline"
-              >
-                {link.name}
-              </a>
-            )
-        )}
+      <div className="mt-10 flex gap-4 justify-center">
+        {data.links.map((link, index) => (
+          <a
+            key={index}
+            href={link.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold text-sky-600 hover:underline"
+          >
+            {link.name}
+          </a>
+        ))}
       </div>
     </div>
   );
