@@ -6,7 +6,7 @@ const experience = [
     logo: "/stealth.jpeg",
     dateStarted: "April 2025",
     dateEnded: "Present",
-    jobTitle: "Founder",
+    jobTitle: "Product Builder",
     location: "Remote",
     color: "#222",
     highlights: [],
