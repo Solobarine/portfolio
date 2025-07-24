@@ -57,6 +57,53 @@ const fullstack = [
   },
   {
     id: 1,
+    name: "RechargePadi",
+    description:
+      "A Bills Payment Platform for Airtime, Data, Cable and Electricity",
+    features: [
+      "User Authentication",
+      "Airtime and Data Purchase",
+      "Cable and Electricity Purchase",
+      "Transaction History",
+    ],
+    images: ["/projects/rechargepadi/rechargepadi.png"],
+    languages: [
+      { name: "Ruby", icon: "devicon-ruby-plain colored" },
+      { name: "Typescript", icon: "devicon-typescript-plain colored" },
+    ],
+    frameworksAndTools: [
+      { name: "Rails", icon: "devicon-rails-plain colored" },
+      {
+        name: "NuxtJS",
+        icon: "devicon-nuxtjs-plain colored",
+      },
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+      {
+        name: "JWT",
+        image: "/technologies/jwt.png",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "https://rechargepadi.netlify.app",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/Solobarine/recharge_padi",
+      },
+    ],
+    in_progress: true,
+  },
+  {
+    id: 1,
     name: "RoadMaster",
     description: "An Inventory Management Application for Car Dealerships",
     features: [

@@ -4,13 +4,14 @@ import ProjectPreview from "../Components/ProjectPreview";
 const Works = () => {
   return (
     <>
-      <section
-        className=" w-full max-w-[60em] mx-auto sm:px-3 pt-16"
-        id="projects"
-      >
-        <h2 className="text-3xl sm:text-5xl font-semibold text-center p-2 py-6 mb-6">
+      <section className="sm:px-3 pt-16" id="projects">
+        <h2 className="text-3xl sm:text-5xl font-semibold text-center p-2">
           Best Personal Projects
         </h2>
+        <p className="text-center max-w-lg mx-auto mb-6">
+          A showcase of my best personal projects, highlighting the technologies
+          I work with and the problems I solve.
+        </p>
         <div className="flex items-center gap-10 justify-center flex-wrap pb-10">
           {fullstack.map((data, index) => (
             <ProjectPreview key={index} data={data} />

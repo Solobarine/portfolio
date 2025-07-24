@@ -9,7 +9,7 @@ import ScrollToHash from "./hooks/scroll";
 
 function App() {
   return (
-    <div className="app grid min-h-screen relative max-w-screen overflow-x-hidden font-itim text-gray-700 dark:text-gray-200 dark:bg-neutral-700">
+    <div className="app grid min-h-screen relative max-w-screen overflow-x-hidden font-itim text-neutral-700 dark:text-neutral-200 dark:bg-neutral-700">
       <NavBar />
       <ScrollToHash />
       <main className="min-h-screen">
