@@ -48,7 +48,11 @@ body {
 }
 
 .vertical-timeline-element-content {
-  @apply !bg-white dark:!bg-zinc-900;
+  @apply !bg-white dark:!bg-neutral-700;
+}
+
+.school .vertical-timeline-element-content {
+  @apply !bg-white dark:!bg-neutral-800;
 }
 
 @media screen and (min-width: 640px) {

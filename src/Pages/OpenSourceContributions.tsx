@@ -47,19 +47,19 @@ export default function OpenSourceContributions() {
         {contributions.map((contrib, idx) => (
           <div
             key={idx}
-            className="bg-white dark:bg-zinc-900 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-6"
+            className="bg-white dark:bg-neutral-800 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-6"
           >
-            <h3 className="text-xl font-semibold text-zinc-600 dark:text-white mb-2">
+            <h3 className="text-xl font-semibold text-neutral-600 dark:text-white mb-2">
               {contrib.title}
             </h3>
-            <p className="text-zinc-600 dark:text-zinc-300 text-sm mb-4">
+            <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4">
               {contrib.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {contrib.techStack.map((tech, i) => (
                 <span
                   key={i}
-                  className="bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs px-2 py-1 rounded-full"
+                  className="bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 text-xs px-2 py-1 rounded-full"
                 >
                   {tech}
                 </span>
