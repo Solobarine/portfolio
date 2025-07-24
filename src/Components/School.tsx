@@ -50,13 +50,14 @@ const School = ({ data }: { data: SchoolProps }) => {
         placeItems: "center",
       }}
       contentStyle={{
-        background: theme === "light" ? "#fff" : "#222",
+        background: theme === "light" ? "#fff" : "rgb(64,64,64)",
         color: "#333",
         borderRadius: "10px",
         boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
         padding: "20px",
       }}
       contentArrowStyle={{ borderRight: "7px solid #f9f9f9" }}
+      className="school"
     >
       <div
         ref={ref}
