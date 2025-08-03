@@ -7,11 +7,15 @@ const Skills = () => {
   return (
     <div className="w-full py-20">
       <h1
-        className="text-3xl sm:text-5xl overflow-hidden font-semibold text-center py-6 mb-6"
+        className="text-3xl sm:text-5xl overflow-hidden font-semibold text-center p-2"
         id="skills"
       >
         My Skills
       </h1>
+      <p className="text-center max-w-lg mx-auto mb-6">
+        A showcase of the tools, technologies, and frameworks I specialize in.
+      </p>
+
       <div className="p-2 flex items-center flex-wrap justify-center gap-16 sm:px-10">
         <div className="p-3 rounded-lg shadow-md hover:shadow-lg dark:bg-neutral-800 w-full grow sm:max-w-[20em]">
           <h2 className="text-lg pb-2 font-semibold">Languages</h2>
@@ -39,7 +43,7 @@ const Skills = () => {
                 />
               ) : (
                 <Skill key={tech.id} image={tech.image} name={tech.name} />
-              )
+              ),
             )}
           </div>
         </div>
