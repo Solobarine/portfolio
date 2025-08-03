@@ -27,7 +27,7 @@ const caseStudies: CaseStudies[] = [
   {
     id: 1,
     title: "Rental Property Platform",
-    imageURI: "/rental_platform.avif",
+    imageURI: "/projects/property-listing/hero.png",
     summary:
       "Building of a Property Rental Platform that led to a 23% decrease in property browsing.",
     challenge:
@@ -70,7 +70,7 @@ const caseStudies: CaseStudies[] = [
   {
     id: 3,
     title: "Art E-commerce Platform",
-    imageURI: "/art_ecommerce_platform.avif",
+    imageURI: "/projects/arts-store/products.png",
     summary:
       "Development of an E-Commerce Platform with Payment integration for Art Sales.",
     challenge:

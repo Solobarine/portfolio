@@ -1348,6 +1348,11 @@ video {
      object-fit: cover;
 }
 
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .object-center{
   -o-object-position: center;
      object-position: center;
@@ -2000,6 +2005,11 @@ body{
 .dark\:bg-zinc-800:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-zinc-600:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 82 91 / var(--tw-bg-opacity));
 }
 
 .dark\:from-neutral-800:is(.dark *){

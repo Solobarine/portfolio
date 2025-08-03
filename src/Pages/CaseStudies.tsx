@@ -13,11 +13,15 @@ const CaseStudies = () => {
             <Link
               key={study.id}
               to={`/case-studies/${study.id}`}
-              className="bg-white dark:bg-zinc-800 rounded-lg overflow-hidden"
+              className="bg-white dark:bg-neutral-800 rounded-lg overflow-hidden"
             >
               <div className="overflow-hidden shadow transition-all duration-300 hover:shadow-lg">
-                <div className="relative h-60 w-full overflow-hidden">
-                  <img src={study.imageURI} alt="Case Study Image" />
+                <div className="relative h-60 w-full bg-neutral-200 dark:bg-neutral-600 overflow-hidden">
+                  <img
+                    src={study.imageURI}
+                    alt="Case Study Image"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="mt-3 text-xl font-semibold">{study.title}</h3>
