@@ -40,9 +40,13 @@ const contributions: Contribution[] = [
 export default function OpenSourceContributions() {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
-      <h2 className="text-3xl sm:text-5xl font-bold mb-10 text-center">
+      <h2 className="text-3xl sm:text-5xl font-bold text-center p-2">
         Open Source Contributions
       </h2>
+      <p className="text-center max-w-lg mx-auto mb-6">
+        Projects and code I've shared with the community to solve real-world
+        problems.
+      </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {contributions.map((contrib, idx) => (
           <div

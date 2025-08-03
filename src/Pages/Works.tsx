@@ -6,7 +6,7 @@ const Works = () => {
     <>
       <section className="sm:px-3 pt-16" id="projects">
         <h2 className="text-3xl sm:text-5xl font-semibold text-center p-2">
-          Best Personal Projects
+          Best Projects
         </h2>
         <p className="text-center max-w-lg mx-auto mb-6">
           A showcase of my best personal projects, highlighting the technologies

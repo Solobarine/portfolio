@@ -1,9 +1,13 @@
 const Contact = () => {
   return (
     <div className="bg-zinc-200 dark:bg-neutral-800 py-20 p-4" id="contact">
-      <h1 className="text-3xl sm:text-5xl font-semibold text-center mb-10">
+      <h1 className="text-3xl sm:text-5xl font-semibold text-center p-2">
         Contact Me
       </h1>
+      <p className="text-center max-w-lg mx-auto mb-6">
+        Let’s connect — I’m open to collaborations, freelance work, and
+        full-time roles.
+      </p>
       <div className="flex flex-wrap justify-center gap-10">
         <div className="w-full max-w-[30em]">
           <p className="text-lg dark:text-gray-100 leading-relaxed">

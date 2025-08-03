@@ -8,6 +8,7 @@ interface ProjectProps {
   frameworksAndTools: { name: string; icon?: string; image?: string }[];
   links: { name: string; link: string }[];
   in_progress: boolean;
+  redacted: boolean;
 }
 
 const ProjectPreview = ({ data }: { data: ProjectProps }) => {
@@ -58,17 +59,21 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         </div>
 
         <div className="mt-5 flex gap-4 justify-center">
-          {data.links.map((link, index) => (
-            <a
-              key={index}
-              href={link.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-semibold text-sky-600 hover:underline"
-            >
-              {link.name}
-            </a>
-          ))}
+          {data.redacted ? (
+            <p className="text-red-500 text-lg font-semibold">Redacted</p>
+          ) : (
+            data.links.map((link, index) => (
+              <a
+                key={index}
+                href={link.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-sky-600 hover:underline"
+              >
+                {link.name}
+              </a>
+            ))
+          )}
         </div>
       </div>
     </div>

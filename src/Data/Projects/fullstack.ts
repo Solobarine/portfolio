@@ -54,9 +54,44 @@ const fullstack = [
       },
     ],
     in_progress: true,
+    redacted: false,
   },
   {
     id: 1,
+    name: "Property Listing",
+    description: "An Property Listing App connecting Renters and Agents",
+    features: [""],
+    images: ["/projects/property-listing/hero.png"],
+    languages: [
+      { name: "Ruby", icon: "devicon-ruby-plain colored" },
+      { name: "Typescript", icon: "devicon-typescript-plain colored" },
+    ],
+    frameworksAndTools: [
+      { name: "Rails", icon: "devicon-rails-plain colored" },
+      {
+        name: "NextJS",
+        icon: "devicon-nextjs-plain colored",
+      },
+
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+      {
+        name: "JWT",
+        image: "/technologies/jwt.png",
+      },
+    ],
+    links: [],
+    in_progress: false,
+    redacted: true,
+  },
+  {
+    id: 2,
     name: "RechargePadi",
     description:
       "A Bills Payment Platform for Airtime, Data, Cable and Electricity",
@@ -101,9 +136,52 @@ const fullstack = [
       },
     ],
     in_progress: true,
+    redacted: true,
   },
   {
-    id: 1,
+    id: 3,
+    name: "Arts E-Commerce Store",
+    description: "An Online Arts Store",
+    features: [],
+    images: ["/projects/arts-store/products.png"],
+    languages: [
+      {
+        name: "PHP",
+        icon: "devicon-php-plain colored",
+      },
+      {
+        name: "Typescript",
+        icon: "devicon-typescript-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "NuxtJS",
+        icon: "devicon-nuxtjs-plain colored",
+      },
+      {
+        name: "Pinia",
+        image: "/technologies/pinia.svg",
+      },
+      {
+        name: "Laravel",
+        icon: "devicon-laravel-plain colored",
+      },
+      {
+        name: "PostgreSQL",
+        icon: "devicon-postgresql-plain colored",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+    ],
+    links: [],
+    in_progress: false,
+    redacted: true,
+  },
+  {
+    id: 4,
     name: "RoadMaster",
     description: "An Inventory Management Application for Car Dealerships",
     features: [
@@ -157,9 +235,10 @@ const fullstack = [
       },
     ],
     in_progress: true,
+    redacted: false,
   },
   {
-    id: 2,
+    id: 5,
     name: "Bite Express",
     description: "A Food Ordering Site connecting Food Lovers with Restaurants",
     features: [
@@ -195,7 +274,10 @@ const fullstack = [
         name: "React",
         icon: "devicon-react-original colored",
       },
-      { name: "Redux", icon: "devicon-redux-plain colored" },
+      {
+        name: "Redux",
+        icon: "devicon-redux-plain colored",
+      },
       {
         name: "PostgreSQL",
         icon: "devicon-postgresql-plain colored",
@@ -222,7 +304,7 @@ const fullstack = [
     in_progress: false,
   },
   {
-    id: 3,
+    id: 6,
     name: "Vibely",
     description: "A Social Media Application for Posts and Messaging.",
     features: [
@@ -302,9 +384,10 @@ const fullstack = [
       },
     ],
     in_progress: false,
+    redacted: false,
   },
   {
-    id: 4,
+    id: 7,
     name: "Flymate",
     description: "A Travel Landing Page with 3D elements.",
     features: ["3D scenes", "3D models", "Animatioons"],
@@ -348,6 +431,7 @@ const fullstack = [
       },
     ],
     in_progress: false,
+    redacted: false,
   },
 ];
 
