@@ -302,6 +302,7 @@ const fullstack = [
       },
     ],
     in_progress: false,
+    redacted: false,
   },
   {
     id: 6,
