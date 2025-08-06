@@ -16,10 +16,10 @@ const Skills = () => {
         A showcase of the tools, technologies, and frameworks I specialize in.
       </p>
 
-      <div className="p-2 flex items-center flex-wrap justify-center gap-16 sm:px-10">
-        <div className="p-3 rounded-lg shadow-md hover:shadow-lg dark:bg-neutral-800 w-full grow sm:max-w-[20em]">
-          <h2 className="text-lg pb-2 font-semibold">Languages</h2>
-          <hr className="border-gray-400" />
+      <div className="p-2 sm:px-10 space-y-6">
+        <div className="p-4 rounded-lg shadow-md hover:shadow-lg bg-neutral-100 dark:bg-neutral-800 w-full">
+          <h2 className="text-2xl pb-2 font-semibold">Languages</h2>
+          <hr className="border-blue-400" />
           <div className="skills">
             {languages.map((language) => (
               <Skill
@@ -30,9 +30,9 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="p-3 rounded-lg shadow-md hover:shadow-lg dark:bg-neutral-800 grow w-full sm:max-w-[20em]">
-          <h2 className="text-lg pb-2 font-semibold">Frontend</h2>
-          <hr className="border-gray-400" />
+        <div className="p-4 rounded-lg shadow-md hover:shadow-lg bg-neutral-100 dark:bg-neutral-800 grow w-full">
+          <h2 className="text-2xl pb-2 font-semibold">Frontend</h2>
+          <hr className="border-blue-400" />
           <div className="skills">
             {frontend.map((tech) =>
               tech.icon ? (
@@ -47,9 +47,9 @@ const Skills = () => {
             )}
           </div>
         </div>
-        <div className="p-3 rounded-lg shadow-md hover:shadow-lg dark:bg-neutral-800 grow w-full sm:max-w-[20em]">
-          <h2 className="text-lg pb-2 font-semibold">Backend</h2>
-          <hr className="border-gray-400" />
+        <div className="p-4 rounded-lg shadow-md hover:shadow-lg bg-neutral-100 dark:bg-neutral-800 grow w-full">
+          <h2 className="text-2xl pb-2 font-semibold">Backend</h2>
+          <hr className="border-blue-400" />
           <div className="skills">
             {backend.map((tech) => (
               <Skill

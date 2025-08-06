@@ -49,7 +49,7 @@ const Space = () => {
           {planets.map(
             (
               { size, map, orbitRadius, position, speedFactor, name },
-              index
+              index,
             ) => (
               <Planet
                 key={index}
@@ -60,7 +60,7 @@ const Space = () => {
                 speedFactor={speedFactor}
                 handleClick={() => console.log(name)}
               />
-            )
+            ),
           )}
           <Preload all />
         </Canvas>
