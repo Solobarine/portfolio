@@ -58,7 +58,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-6">Solomon Akpuru</h3>
 
             {/* Social Links */}
-            <div className="flex justify-center gap-6 mb-8">
+            <div className="flex justify-center flex-wrap gap-6 mb-8">
               {socialLinks.map((link) => {
                 const Icon = link.icon;
                 return (
