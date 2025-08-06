@@ -1,10 +1,18 @@
-import { Github, Linkedin, Twitter, Mail, Globe } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import {
+  Fiverr,
+  Freelancer,
+  GitHub,
+  Gmail,
+  Upwork,
+  X,
+} from "../assets/icons/logos";
 
 const socialLinks = [
   {
     name: "GitHub",
     url: "https://github.com/solobarine",
-    icon: Github,
+    icon: GitHub,
   },
   {
     name: "LinkedIn",
@@ -14,17 +22,27 @@ const socialLinks = [
   {
     name: "Twitter",
     url: "https://x.com/solomonakpuru",
-    icon: Twitter,
+    icon: X,
   },
   {
     name: "Email",
     url: "mailto:solobarine@gmail.com",
-    icon: Mail,
+    icon: Gmail,
   },
   {
     name: "Upwork",
     url: "https://www.upwork.com/freelancers/~01d7b0469a7602559b",
-    icon: Globe,
+    icon: Upwork,
+  },
+  {
+    name: "Fiverr",
+    url: "https://www.fiverr.com/solomonakpuru",
+    icon: Fiverr,
+  },
+  {
+    name: "Freelancer",
+    url: "https://www.freelancer.com/u/solobarine",
+    icon: Freelancer,
   },
 ];
 
@@ -52,7 +70,7 @@ const Footer = () => {
                     className="text-muted-foreground hover:text-foreground transition-colors p-2 hover:bg-muted rounded-lg"
                     aria-label={link.name}
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-6 h-6" />
                   </a>
                 );
               })}

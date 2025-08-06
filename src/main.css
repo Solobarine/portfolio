@@ -44,7 +44,8 @@ body {
 }
 
 .skills {
-  @apply grid w-full grid-cols-1 sm:grid-cols-2;
+  @apply grid w-full gap-3 p-3;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
 
 .vertical-timeline-element-content {
