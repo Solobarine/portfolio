@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState<"light" | "dark">(() => {
@@ -29,17 +30,42 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button
+    <motion.button
       onClick={toggleTheme}
-      className="flex items-center justify-center p-2 rounded-full bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 transition duration-300"
-      aria-label="Toggle Theme"
+      className="relative p-2 rounded-xl bg-stone-700/20 hover:bg-stone-600/20 transition-colors duration-300"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
     >
-      {theme === "dark" ? (
-        <Sun className="h-5 w-5 text-yellow-400" />
-      ) : (
-        <Moon className="h-5 w-5 text-zinc-800" />
-      )}
-    </button>
+      <motion.div
+        className="relative w-6 h-6"
+        animate={{ rotate: theme == "dark" ? 180 : 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <AnimatePresence mode="wait">
+          {theme == "dark" ? (
+            <motion.div
+              key="moon"
+              initial={{ opacity: 0, rotate: -180 }}
+              animate={{ opacity: 1, rotate: 0 }}
+              exit={{ opacity: 0, rotate: 180 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Moon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="sun"
+              initial={{ opacity: 0, rotate: 180 }}
+              animate={{ opacity: 1, rotate: 0 }}
+              exit={{ opacity: 0, rotate: -180 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Sun className="w-6 h-6 text-yellow-600" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+    </motion.button>
   );
 };
 
