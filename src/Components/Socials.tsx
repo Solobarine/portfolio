@@ -41,7 +41,7 @@ const Socials = ({ customStyles = "" }: SocialsProps) => {
     },
     {
       name: "Fiverr",
-      url: "https://www.fiverr.com/solomonakpuru",
+      url: "https://www.fiverr.com/solomonakpuru/build-you-a-modern-scalable-and-responsive-web-application",
       icon: Fiverr,
     },
     {
