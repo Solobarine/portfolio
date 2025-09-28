@@ -24,6 +24,11 @@ const languages = [
     name: "Elixir",
     icon: "devicon-elixir-plain colored",
   },
+  {
+    id: 5,
+    name: "Python",
+    icon: "devicon-python-plain colored",
+  },
 ];
 
 export default languages;

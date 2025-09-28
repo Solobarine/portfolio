@@ -39,6 +39,17 @@ const frontend = [
     name: "TailwindCSS",
     icon: "devicon-tailwindcss-plain colored",
   },
+  {
+    id: 8,
+    name: "Zustand",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/zustand/zustand-original.svg",
+  },
+  {
+    id: 9,
+    name: "Material UI",
+    icon: "devicon-materialui-plain colored",
+  },
 ];
 
 export default frontend;

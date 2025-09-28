@@ -19,6 +19,11 @@ const backend = [
     name: "Phoenix",
     icon: "devicon-phoenix-plain-wordmark colored",
   },
+  {
+    id: 4,
+    name: "Django",
+    icon: "devicon-django-plain colored",
+  },
 ];
 
 export default backend;
