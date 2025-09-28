@@ -85,12 +85,66 @@ const experience = [
   },
   {
     id: 5,
+    company: "Syntrix",
+    website: "",
+    logo: "",
+    dateStarted: "Feb 2022",
+    dateEnded: "Apr 2023",
+    jobTitle: "Software Engineer",
+    location: "Remote",
+    color: "#fff",
+    highlights: [
+      "Developed and shipped new product features in a Django + React application, improving user engagement and overall usability.",
+
+      "Implemented background jobs and automated workflows using Django Q / Celery, ensuring timely execution of recurring and heavy tasks.",
+
+      "Integrated and managed email delivery pipelines, enabling transactional and bulk email notifications with high deliverability.",
+
+      "Enhanced accessibility across the web app (ARIA roles, semantic HTML, contrast adjustments), making the platform compliant with accessibility standards (WCAG).",
+
+      "Containerized services with Docker and set up GitHub Actions for CI/CD, streamlining deployments and reducing release time.",
+
+      "Optimized database queries and schema design in MySQL, improving response times for critical endpoints.",
+
+      "Collaborated with cross-functional teams to refine UI components in React with TailwindCSS, ensuring a consistent design system and responsive layout.",
+    ],
+  },
+  {
+    id: 6,
+    company: "Horizon Digital",
+    website: "",
+    logo: "",
+    dateStarted: "Sep 2020",
+    dateEnded: "May 2021",
+    jobTitle: "Software Engineer",
+    location: "Remote",
+    color: "#fff",
+    highlights: [
+      "Designed and built a real-time chat application with secure private channels using WebSockets, enabling instant communication between users.",
+
+      "Implemented robust authentication and authorization, including OAuth integrations (Google, Facebook, etc.), ensuring secure and seamless logins.",
+
+      "Developed a notifications system (in-app + email), improving user engagement and retention.",
+
+      "Leveraged Sidekiq to manage background jobs such as message delivery, notifications, and scheduled tasks, reducing app latency and improving scalability.",
+
+      "Optimized PostgreSQL queries and introduced Redis caching, cutting down response times on frequently accessed endpoints.",
+
+      "Enhanced UI/UX by building reusable and responsive components with Next.js and Material UI, ensuring a modern and consistent front-end experience.",
+
+      "Collaborated on architecture decisions to improve system scalability and reliability, supporting growing user traffic.",
+
+      "Wrote and maintained RSpec and Jest test suites, improving code reliability and reducing production bugs.",
+    ],
+  },
+  {
+    id: 7,
     company: "Network Oil and Gas",
     website: "https://noandgltd.com",
     logo: "/workplace/nog.jpg",
     dateStarted: "May 2021",
     dateEnded: "August 2021",
-    jobTitle: "Intern",
+    jobTitle: "Production Intern",
     location: "Benin City, Nigeria",
     color: "#fff",
     highlights: [
