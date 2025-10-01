@@ -88,9 +88,9 @@ const experience = [
     company: "Syntrix",
     website: "",
     logo: "",
-    dateStarted: "Feb 2022",
+    dateStarted: "May 2021",
     dateEnded: "Apr 2023",
-    jobTitle: "Software Engineer",
+    jobTitle: "Software Engineer II",
     location: "Remote",
     color: "#fff",
     highlights: [
@@ -111,12 +111,12 @@ const experience = [
   },
   {
     id: 6,
-    company: "Horizon Digital",
+    company: "Syntrix",
     website: "",
     logo: "",
-    dateStarted: "Sep 2020",
+    dateStarted: "Jul 2020",
     dateEnded: "May 2021",
-    jobTitle: "Software Engineer",
+    jobTitle: "Software Engineer I",
     location: "Remote",
     color: "#fff",
     highlights: [
