@@ -18,7 +18,7 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         <img
           src={data.images[0]}
           alt={`${data.name} preview`}
-          className="w-full bg-red-500 aspect-video object-cover rounded-md"
+          className="w-full bg-neutral-300 dark:bg-neutral-600 aspect-video object-cover rounded-md"
           loading="lazy"
         />
         {data.in_progress && (
