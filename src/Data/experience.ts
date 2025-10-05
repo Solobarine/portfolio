@@ -4,7 +4,7 @@ const experience = [
     company: "Toucan",
     website: "#",
     logo: "/toucan_logo.avif",
-    dateStarted: "October 2025",
+    dateStarted: "October 2024",
     dateEnded: "Present",
     jobTitle: "Founder and Lead Engineer",
     location: "Remote",
