@@ -66,7 +66,7 @@ const caseStudies: CaseStudies[] = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     title: "Rental Property Platform",
     imageURI: "/projects/property-listing/hero.png",
     summary:
@@ -89,7 +89,7 @@ const caseStudies: CaseStudies[] = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "Personalized Meals Recommendations Algorithm",
     imageURI: "/meals.jpg",
     summary:
@@ -109,7 +109,7 @@ const caseStudies: CaseStudies[] = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "Art E-commerce Platform",
     imageURI: "/projects/arts-store/products.png",
     summary:
