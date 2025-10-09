@@ -9,7 +9,7 @@ const fullstack = [
       "Websockets for Posts",
       "Comments and Replies",
     ],
-    images: ["/projects/toucan/toucan_hero.png"],
+    images: ["https://i.postimg.cc/mkLR6tgW/Screenshot-2025-08-07-210323.png"],
     languages: [
       {
         name: "TypeScript",
@@ -135,7 +135,7 @@ const fullstack = [
         link: "https://github.com/Solobarine/recharge_padi",
       },
     ],
-    in_progress: true,
+    in_progress: false,
     redacted: true,
   },
   {

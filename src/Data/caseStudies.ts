@@ -26,6 +26,47 @@ const caseStudies: CaseStudies[] = [
   },
   {
     id: 1,
+    title: "Toucan - Social Media Application",
+    imageURI: "https://i.postimg.cc/k5CN7yFN/chats.avif",
+    summary:
+      "A web application that enables users to share posts, chat in real time, and interact meaningfully through comments, likes, and reposts — built with Elixir Phoenix, React, and TypeScript.",
+    challenge:
+      "Modern social platforms amplify noise, reward outrage, and prioritize engagement over genuine connection. Many users feel disconnected, overwhelmed, and unheard. I set out to build a platform that brings back authentic interaction, intentional sharing, and real-time connection — without the toxicity or algorithmic manipulation.",
+    solution:
+      "I’m developing Toucan, a social media app built with Elixir Phoenix, React, and TypeScript, designed for meaningful engagement. Toucan features real-time private chat, interactive posts (likes, comments, reposts), and customizable light/dark themes — all powered by JWT authentication and Phoenix Channels for instant updates.",
+    result:
+      "Toucan’s MVP is live in development, already supporting private messaging and social interactions. The next milestone is a personalized feed algorithm that curates content based on relevance, relationships, and interaction patterns — helping users connect meaningfully, not mindlessly.",
+    technologies: [
+      "Elixir Phoenix",
+      "React",
+      "Typescript",
+      "PostgreSQL",
+      "AWS S3",
+      "TailwindCSS",
+    ],
+  },
+  {
+    id: 2,
+    title: "RechargePadi - Bills Payment Platform",
+    imageURI: "https://i.postimg.cc/pd4ngH0K/Screenshot-2025-07-26-011944.png",
+    summary:
+      "A web application that allows users to buy airtime, data, electricity, and TV subscriptions seamlessly using secure payment integrations with VTpass and Flutterwave.",
+    challenge:
+      "Explore the feasibility of building a lightweight bills payment service for airtime, data, TV, and electricity in a market dominated by Opay and Moniepoint.",
+    solution:
+      "Developed a full-stack MVP using Ruby on Rails and Nuxt.js, integrated with VTpass and Flutterwave for live transactions, and tested real-time notifications and user flows.",
+    result:
+      "User research showed strong preference for established platforms. I decided to discontinue development early and pivot insights toward understanding user trust, fintech differentiation, and market saturation in Nigeria’s payment ecosystem.",
+    technologies: [
+      "NuxtJS",
+      "Typescript",
+      "Ruby on Rails",
+      "TailwindCSS",
+      "PostgreSQL",
+    ],
+  },
+  {
+    id: 1,
     title: "Rental Property Platform",
     imageURI: "/projects/property-listing/hero.png",
     summary:
