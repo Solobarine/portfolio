@@ -1,6 +1,23 @@
 const experience = [
   {
     id: 0,
+    company: "Independent Contractor (Freelance)",
+    website: "https://solobarine.netlify.app",
+    logo: "/logo.png",
+    dateStarted: "January 2023",
+    dateEnded: "Present",
+    jobTitle: "Software Engineer",
+    location: "Port Harcourt, Nigeria (Remote)",
+    highlights: [
+      "Delivered property rental SaaS platform serving 2K+ landlords and tenants, featuring real-time search with 80% faster query performance through optimized indexing and caching strategies",
+      "Built crypto-fiat exchange infrastructure processing $30K+ monthly volume across 5+ cryptocurrencies, implementing fraud detection reducing chargebacks.",
+      "Architected e-commerce platform for digital art marketplace, integrating Stripe payments and achieving 99.95% transaction success rate with automated reconciliation",
+      "Developed a recommendation engine increasing user engagement by 32% through collaborative filtering algorithms analyzing 8K+ user interactions",
+    ],
+    color: "#ffffff",
+  },
+  {
+    id: 1,
     company: "Toucan",
     website: "#",
     logo: "/toucan_logo.avif",
@@ -18,7 +35,7 @@ const experience = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     company: "RechargePadi",
     website: "https://solobarine.netlify.app",
     logo: "/rechargepadi_logo.avif",
@@ -38,7 +55,7 @@ const experience = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: "Digital Factory",
     website: "https://www.dgtl-factory.com",
     logo: "/workplace/dgtf-logo.png",
@@ -53,23 +70,6 @@ const experience = [
       "Modernized the codebase by upgrading deprecated dependencies and replacing unsupported packages with actively maintained alternatives.",
       "Streamlined asset delivery, optimized animations, and resolved site errors , contributing to a 20% increase in website PageScans ratings.",
     ],
-  },
-  {
-    id: 3,
-    company: "Independent Contractor",
-    website: "https://solobarine.netlify.app",
-    logo: "/logo.png",
-    dateStarted: "January 2023",
-    dateEnded: "Present",
-    jobTitle: "Software Engineer",
-    location: "Port Harcourt, Nigeria (Remote)",
-    highlights: [
-      "Delivered property rental SaaS platform serving 2K+ landlords and tenants, featuring real-time search with 80% faster query performance through optimized indexing and caching strategies",
-      "Built crypto-fiat exchange infrastructure processing $30K+ monthly volume across 5+ cryptocurrencies, implementing fraud detection reducing chargebacks.",
-      "Architected e-commerce platform for digital art marketplace, integrating Stripe payments and achieving 99.95% transaction success rate with automated reconciliation",
-      "Developed a recommendation engine increasing user engagement by 32% through collaborative filtering algorithms analyzing 8K+ user interactions",
-    ],
-    color: "#ffffff",
   },
   {
     id: 4,

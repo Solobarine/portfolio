@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import ImageCarousel from "./ImageCaurosel";
+
 interface ProjectProps {
   id: number;
   name: string;
@@ -15,12 +18,7 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
   return (
     <div className="w-full max-w-sm bg-white dark:bg-neutral-800 rounded-xl shadow-md overflow-hidden transition hover:shadow-xl">
       <div className="relative">
-        <img
-          src={data.images[0]}
-          alt={`${data.name} preview`}
-          className="w-full bg-neutral-300 dark:bg-neutral-600 aspect-video object-cover rounded-md"
-          loading="lazy"
-        />
+        <ImageCarousel images={data.images} />
         {data.in_progress && (
           <span className="absolute bottom-1 right-1 bg-sky-500 text-white text-xs font-semibold px-3 py-1 rounded-full mt-3 ml-auto">
             In Progress
@@ -28,8 +26,8 @@ const ProjectPreview = ({ data }: { data: ProjectProps }) => {
         )}
       </div>
       <div className="p-4">
-        <h2 className="text-2xl font-bold mt-2 text-neutral-800 dark:text-white">
-          {data.name}
+        <h2 className="text-2xl font-bold mt-2 text-neutral-800 dark:text-white hover:underline hover:text-sky-600">
+          <Link to={`/projects/${data.id}`}>{data.name}</Link>
         </h2>
         <p className="text-sm text-neutral-600 dark:text-neutral-300 mt-2">
           {data.description}

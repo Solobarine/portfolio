@@ -35,6 +35,22 @@ const contributions: Contribution[] = [
       "https://github.com/WikiEducationFoundation/WikiEduDashboard/pull/6285",
     techStack: ["Ruby on Rails", "React", "PostgreSQL", "Jest"],
   },
+  {
+    title: "Wikimedia Edu Dashboard",
+    description:
+      "Fix issue where course's view count is zero when it's articles may have had view",
+    contributionUrl:
+      "https://github.com/WikiEducationFoundation/WikiEduDashboard/pull/6485#issue-3505898936",
+    techStack: ["Ruby on Rails", "RSpec"],
+  },
+  {
+    title: "Git",
+    description:
+      "Replaced old system file checks with new test helpers, imroving runtime diagnosis.",
+    contributionUrl:
+      "https://public-inbox.org/git/20251015140329.13691-2-solobarine@gmail.com/",
+    techStack: ["C"],
+  },
 ];
 
 export default function OpenSourceContributions() {

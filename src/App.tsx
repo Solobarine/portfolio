@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import CaseStudy from "./Pages/CaseStudy";
 import NotFound from "./Pages/NotFound";
 import ScrollToHash from "./hooks/scroll";
+import ProjectPage from "./Pages/Project";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/case-studies/:id" element={<CaseStudy />} />
+          <Route path="/projects/:id" element={<ProjectPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

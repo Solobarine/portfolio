@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const navItems = [
   { name: "Case Studies", href: "/case-studies" },
@@ -16,10 +16,12 @@ const navItems = [
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [onHero, setOnHero] = useState(true);
+  const [onHero, setOnHero] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [scrollProgress, setScrollProgress] = useState(0);
+
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -32,7 +34,7 @@ const NavBar = () => {
       const documentHeight = document.documentElement.scrollHeight;
 
       // Update hero state
-      setOnHero(scrollY < 913);
+      setOnHero(scrollY < 913 && pathname == "/");
 
       // Calculate scroll progress
       const progress = (scrollY / (documentHeight - windowHeight)) * 100;

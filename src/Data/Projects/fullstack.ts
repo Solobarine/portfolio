@@ -1,4 +1,6 @@
-const fullstack = [
+import { ProjectInterface } from "../../types/project";
+
+const fullstack: ProjectInterface[] = [
   {
     id: 0,
     name: "Toucan",
@@ -9,7 +11,11 @@ const fullstack = [
       "Websockets for Posts",
       "Comments and Replies",
     ],
-    images: ["https://i.postimg.cc/mkLR6tgW/Screenshot-2025-08-07-210323.png"],
+    images: [
+      "https://i.postimg.cc/mkLR6tgW/Screenshot-2025-08-07-210323.png",
+      "https://i.postimg.cc/YSx60mb5/feed.avif",
+      "https://i.postimg.cc/k5CN7yFN/chats.avif",
+    ],
     languages: [
       {
         name: "TypeScript",
@@ -101,7 +107,12 @@ const fullstack = [
       "Cable and Electricity Purchase",
       "Transaction History",
     ],
-    images: ["/projects/rechargepadi/rechargepadi.png"],
+    images: [
+      "/projects/rechargepadi/rechargepadi.png",
+      "https://i.postimg.cc/pd4ngH0K/Screenshot-2025-07-26-011944.png",
+      "https://i.postimg.cc/jjszm1wd/Screenshot-2025-07-26-012009.png",
+      "https://i.postimg.cc/BQH7Gd6n/Screenshot-2025-07-26-012115.png",
+    ],
     languages: [
       { name: "Ruby", icon: "devicon-ruby-plain colored" },
       { name: "Typescript", icon: "devicon-typescript-plain colored" },
@@ -429,6 +440,97 @@ const fullstack = [
       {
         name: "See Code",
         link: "https://github.com/Solobarine/flymate",
+      },
+    ],
+    in_progress: false,
+    redacted: false,
+  },
+  {
+    id: 8,
+    name: "Truckstop",
+    description: "An ELD Logger for Truckers with map route and directions",
+    features: ["Maps"],
+    images: [
+      "https://i.postimg.cc/c4PBb6hn/Screenshot-2025-11-10-094710.png",
+      "https://i.postimg.cc/3JkZ12gs/Screenshot-2025-11-10-094549.png",
+      "https://i.postimg.cc/rFD9j51c/Screenshot-2025-11-10-094623.png",
+    ],
+    languages: [
+      {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain colored",
+      },
+      {
+        name: "Python",
+        icon: "devicon-python-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "React",
+        icon: "devicon-react-original colored",
+      },
+      {
+        name: "Django RestFramework",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "https://truckstop-phi.vercel.app",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/Solobarine/truckstop",
+      },
+    ],
+    in_progress: false,
+    redacted: false,
+  },
+  {
+    id: 7,
+    name: "Image Editor",
+    description: "An Image editor for adding text to images",
+    features: ["Image Editing", "Text in Image"],
+    images: ["https://i.postimg.cc/c4DQ8hr4/Screenshot-2025-11-10-095439.png"],
+    languages: [
+      {
+        name: "TypeScript",
+        icon: "devicon-typescript-plain colored",
+      },
+      {
+        name: "CSS",
+        icon: "devicon-css-plain colored",
+      },
+    ],
+    frameworksAndTools: [
+      {
+        name: "NextJS",
+        icon: "devicon-nextjs-plain colored",
+      },
+      {
+        name: "Konva",
+        image: "https://i.postimg.cc/m23nx0Xd/konva.png",
+      },
+      {
+        name: "TailwindCSS",
+        icon: "devicon-tailwindcss-plain colored",
+      },
+    ],
+    links: [
+      {
+        name: "See Demo",
+        link: "https://image-text-composer-six.vercel.app",
+      },
+      {
+        name: "See Code",
+        link: "https://github.com/Solobarine/image_text_composer",
       },
     ],
     in_progress: false,
