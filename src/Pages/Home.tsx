@@ -14,9 +14,9 @@ const Home = () => {
     <div className="">
       <Hero />
       <About />
-      <Skills />
       <Works />
       <OpenSourceContributions />
+      <Skills />
       <Experience />
       <Education />
       <Contact />
