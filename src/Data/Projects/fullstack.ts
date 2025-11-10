@@ -1,4 +1,6 @@
-const fullstack = [
+import { ProjectInterface } from "../../types/project";
+
+const fullstack: ProjectInterface[] = [
   {
     id: 0,
     name: "Toucan",

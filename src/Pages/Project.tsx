@@ -7,7 +7,6 @@ import ImageCarousel from "../Components/ImageCaurosel";
 
 export default function ProjectPage() {
   const { id } = useParams();
-  console.log(id);
   const project = fullstack.find((project) => project.id == Number(id));
 
   if (!project) return <NotFound />;
@@ -21,9 +20,7 @@ export default function ProjectPage() {
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to all projects
             </Link>
-            <h1 className="text-4xl font-bold sm:text-5xl">
-              {project.name}
-            </h1>
+            <h1 className="text-4xl font-bold sm:text-5xl">{project.name}</h1>
           </div>
         </div>
       </div>
