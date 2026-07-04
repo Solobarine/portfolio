@@ -40,6 +40,20 @@ const Contact = () => {
                 <i className="fa-brands fa-angellist text-2xl"></i>
                 <span className="hover:underline">/u/solomon-akpuru</span>
               </a>
+	      <a
+                href="mailto:solobarine@gmail.com"
+                className="flex items-center gap-3 text-lg hover:text-emerald-600 transition-all duration-300 ease-in-out"
+              >
+                <i className="fa-solid fa-at text-2xl"></i>
+                <span className="hover:underline">Solobarine</span>
+              </a>
+<a
+                href="mailto:solomonakpuru@gmail.com"
+                className="flex items-center gap-3 text-lg hover:text-emerald-600 transition-all duration-300 ease-in-out"
+              >
+                <i className="fa-solid fa-at text-2xl"></i>
+                <span className="hover:underline">SolomonAkpuru</span>
+              </a>
             </div>
           </div>
         </div>
