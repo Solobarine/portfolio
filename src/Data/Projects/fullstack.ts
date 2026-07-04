@@ -317,89 +317,6 @@ const fullstack: ProjectInterface[] = [
   },
   {
     id: 6,
-    name: "Vibely",
-    description: "A Social Media Application for Posts and Messaging.",
-    features: [
-      "User Authentication",
-      "User Authorization",
-      "Multi-Factor Authentication",
-      "Email Verification",
-      "In-App Notifications",
-      "Asset Upload and Storage",
-      "Posts Creation",
-      "Likes and Commemnts",
-      "Friends and Friend Requests",
-      "Followers",
-    ],
-    images: [
-      "/projects/vibely/vibely-landing.avif",
-      "/projects/vibely/vibely-create.png",
-      "/projects/vibely/vibely-message.png",
-      "/projects/vibely/vibely-profile.png",
-    ],
-    languages: [
-      {
-        name: "PHP",
-        icon: "devicon-php-plain colored",
-      },
-      {
-        name: "JavaScript",
-        icon: "devicon-javascript-plain colored",
-      },
-      {
-        name: "CSS",
-        icon: "devicon-css-plain colored",
-      },
-    ],
-    frameworksAndTools: [
-      {
-        name: "Laravel",
-        icon: "devicon-laravel-plain colored",
-      },
-      {
-        name: "VueJS",
-        icon: "devicon-vuejs-plain colored",
-      },
-      {
-        name: "JetStream",
-        image: "/technologies/jetstream.png",
-      },
-      {
-        name: "Inertia",
-        image: "/technologies/inertia.png",
-      },
-      {
-        name: "PostgreSQL",
-        icon: "devicon-postgresql-plain colored",
-      },
-      {
-        name: "AWS S3",
-        image: "/technologies/s3.png",
-      },
-      {
-        name: "Mailtrap",
-        image: "/technologies/mailtrap.png",
-      },
-      {
-        name: "TailwindCSS",
-        icon: "devicon-tailwindcss-plain colored",
-      },
-    ],
-    links: [
-      {
-        name: "See Demo",
-        link: "#",
-      },
-      {
-        name: "See Code",
-        link: "https://github.com/solobarine/vibely",
-      },
-    ],
-    in_progress: false,
-    redacted: false,
-  },
-  {
-    id: 7,
     name: "Flymate",
     description: "A Travel Landing Page with 3D elements.",
     features: ["3D scenes", "3D models", "Animatioons"],
@@ -446,7 +363,7 @@ const fullstack: ProjectInterface[] = [
     redacted: false,
   },
   {
-    id: 8,
+    id: 7,
     name: "Truckstop",
     description: "An ELD Logger for Truckers with map route and directions",
     features: ["Maps"],
@@ -493,49 +410,6 @@ const fullstack: ProjectInterface[] = [
     in_progress: false,
     redacted: false,
   },
-  {
-    id: 7,
-    name: "Image Editor",
-    description: "An Image editor for adding text to images",
-    features: ["Image Editing", "Text in Image"],
-    images: ["https://i.postimg.cc/c4DQ8hr4/Screenshot-2025-11-10-095439.png"],
-    languages: [
-      {
-        name: "TypeScript",
-        icon: "devicon-typescript-plain colored",
-      },
-      {
-        name: "CSS",
-        icon: "devicon-css-plain colored",
-      },
-    ],
-    frameworksAndTools: [
-      {
-        name: "NextJS",
-        icon: "devicon-nextjs-plain colored",
-      },
-      {
-        name: "Konva",
-        image: "https://i.postimg.cc/m23nx0Xd/konva.png",
-      },
-      {
-        name: "TailwindCSS",
-        icon: "devicon-tailwindcss-plain colored",
-      },
-    ],
-    links: [
-      {
-        name: "See Demo",
-        link: "https://image-text-composer-six.vercel.app",
-      },
-      {
-        name: "See Code",
-        link: "https://github.com/Solobarine/image_text_composer",
-      },
-    ],
-    in_progress: false,
-    redacted: false,
-  },
-];
+  ];
 
 export default fullstack;
